@@ -1,0 +1,1137 @@
+schema_version: "4.0"
+project: "metabolismx.org"
+source_master: "book/research/reference_library_master/referenser_master.csv"
+total_references: 71
+purpose: "Städat, mänskligt läsbart referensbibliotek för metabolismx.org, deduplicerat och organiserat för webbens struktur."
+site_sections:
+  risk:
+    title: "RISK"
+    count: 23
+  matvarden:
+    title: "MÄTVÄRDEN"
+    count: 1
+  diagnoser:
+    title: "DIAGNOSER"
+    count: 8
+  lakemedel:
+    title: "LÄKEMEDEL"
+    count: 5
+  vetenskap:
+    title: "VETENSKAP"
+    count: 34
+references:
+  - id: "cardiovascular_and_kindey_outcomes_and_mortality_with_long_acting_glp_1_analoger_in_type_2_diabetes"
+    title: "Cardiovascular and Kindey Outcomes and Mortality with Long Acting GLP-1 Analoger in Type 2 Diabetes"
+    authors: ""
+    year: ""
+    journal: ""
+    doi: ""
+    url: ""
+    site_section: "diagnoser"
+    site_subpage: "diagnoser/diabetes-typ-2"
+    category: []
+    tags: []
+    summary: >
+      Behöver kompletteras redaktionellt.
+    insights_for_site: >
+      Denna referens bör i första hand användas under diabetes-typ-2 i DIAGNOSER.
+  - id: "hotamisligil2006inflammation-and-met"
+    title: "Inflammation and metabolic disorder (2006)"
+    authors: "Gökhan S. Hotamisligil"
+    year: 2006
+    journal: "Nature"
+    doi: "10.1038/nature05485"
+    url: "https://doi.org/10.1038/nature05485"
+    site_section: "diagnoser"
+    site_subpage: "diagnoser/diabetes-typ-2"
+    category: ["Inflammation", "Kardiovaskulär risk", "Typ 2 diabetes", "Övervikt / Fetma"]
+    tags: ["ER stress (endoplasmatic reticulum stress)", "adipokines", "adipose tissue", "chronic inflammation", "cytokines", "insulin resistance", "low grade inflammation", "macrophage infiltration", "metaflammation", "oxidatice stress"]
+    summary: >
+      This landmark review outlines how chronic, low-grade inflammation is a central mechanism
+      linking obesity, insulin resistance, type 2 diabetes, and cardiovascular disease.
+      Hotamisligil describes how adipose tissue becomes immunologically active, how cytokines
+      disrupt insulin signaling, and how metabolic stressors—including lipotoxicity,
+      oxidative stress, and ER stress—drive systemic metabolic dysfunction.
+      insights: |
+      This article established immunometabolism as a field. It shows that metabolic disease
+      is not only a disorder of energy balance but also a dysfunction of immune regulation.
+      The concept of 'metaflammation' introduced here forms part of the theoretical foundation
+      of Metabolism X: chronic metabolic stress leads to persistent inflammatory signaling,
+      accelerating biological aging and organ network desynchronization.
+    insights_for_site: >
+      Insights – Hotamisligil (2006)
+
+
+      • Artikeln etablerar för första gången att inflammation inte är en följdsjukdom av fetma — utan en aktiv drivare av hela det metabola syndromet.
+      • Introducerar synsättet att metabolismen och immunsystemet är två integrerade nätverk, där störningar i det ena omedelbart påverkar det andra.
+      • Visar att fettväv inte är passiv energilagring utan ett endokrint och immunologiskt organ som aktivt producerar inflammatoriska signalmolekyler.
+      • Förskjuter fokus från enskilda organdefekter (t.ex. lever, pankreas) till systemisk dysreglering som förklarar varför olika metabola sjukdomar nästan alltid uppträder tillsammans.
+      • Understryker att låggradig inflammation är en tyst, kronisk stressreaktion som accelererar mycket av det vi uppfattar som biologiskt åldrande.
+      • Etablerar den moderna idén att behandla metabolism kräver att man tystar inflammationen, inte bara sänker blodsocker eller blodfetter.
+  - id: "continous_glucose_hall_et_al_2022"
+    title: "Glucose Patterns in Non-Diabeteic Individuals Revealed by Continous Monitoring"
+    authors: "Hall, H. et al."
+    year: 2022
+    journal: "Nature Metabolism"
+    doi: "10.1038/s42255-022-00627-2"
+    url: "https://doi.org/10.1038/s42255-022-00627-2"
+    site_section: "diagnoser"
+    site_subpage: "diagnoser/diabetes-typ-2"
+    category: ["glukosmetabolism", "prediabetes", "wearables"]
+    tags: ["CGM", "glucose", "metabolism", "non-diabetics"]
+    summary: >
+      Kontinuerlig glukosmätning visade att icke-diabetiker har signifikanta glukostoppar som fasteglukos aldrig fångar
+    insights_for_site: >
+      Denna referens bör i första hand användas under diabetes-typ-2 i DIAGNOSER.
+  - id: "raeven1988raeven-1988-syndrome"
+    title: "Raeven (1988) - Syndrome X"
+    authors: "Gerald M. Raeven"
+    year: 1988
+    journal: "Diabetes"
+    doi: "10.2337/diab.37.12.1595"
+    url: "https://doi.org/10.2337/diab.37.12.1595"
+    site_section: "diagnoser"
+    site_subpage: "diagnoser/metabola-syndromet"
+    category: []
+    tags: ["insuline resistance syndrome X dyslipidemia hyperglycemia cardivascular risk"]
+    summary: >
+      Sammanfattning:
+      Reaven introducerade begreppet "Syndrome X" och argumenterade för att insulinresistens är en central mekanism bakom högt blodtryck, dyslipidemi, glukosrubbningar och framtida typ 2-diabetes.
+    insights_for_site: >
+      Insikt för Metabolism X:
+      Det här var födelsen av den moderna insikten att våra stora folksjukdomar delar en gemensam stoff – rubbad metabolism.
+      Metabolism X fortsätter denna tanke in i 2000-talet: att mätbar rytm och systemisk obalans är mer centralt än enstaka diagnoser.
+  - id: "reaven_1988"
+    title: "Role of insulin resistance in human disease"
+    authors: "Reaven GM"
+    year: 1988
+    journal: "Diabetes"
+    doi: "10.2337/diab.37.12.1595"
+    url: "https://doi.org/10.2337/diab.37.12.1595"
+    site_section: "diagnoser"
+    site_subpage: "diagnoser/metabola-syndromet"
+    category: []
+    tags: []
+    summary: >
+      Reaven GM. Role of Insulin Resistance in Human Disease. Diabetes. 1988;37(12):1595-1607.
+    insights_for_site: >
+      Denna referens bör i första hand användas under metabola-syndromet i DIAGNOSER.
+  - id: "protective_and_damaging_effects_of_stress_mediators_central_role_of_the_brain_2006"
+    title: "Protective and damaging effects of stress mediators: central role of the brain"
+    authors: "McEwen BS"
+    year: 2006
+    journal: "Dialogues Clin Neurosci"
+    doi: ""
+    url: ""
+    site_section: "diagnoser"
+    site_subpage: "diagnoser/metabola-syndromet"
+    category: []
+    tags: []
+    summary: >
+      McEwen BS. Protective and damaging effects of stress mediators: central role of the brain. Dialogues Clin Neurosci. 2006;8(4):367-381.
+    insights_for_site: >
+      Denna referens bör i första hand användas under metabola-syndromet i DIAGNOSER.
+  - id: "predictive_personalized_preventive_participatory_p4_cancer_medicine_2011"
+    title: "Predictive, personalized, preventive, participatory (P4) cancer medicine"
+    authors: "Hood L, Friend SH"
+    year: 2011
+    journal: "Nat Rev Clin Oncol"
+    doi: ""
+    url: ""
+    site_section: "diagnoser"
+    site_subpage: "diagnoser/metabola-syndromet"
+    category: []
+    tags: []
+    summary: >
+      Hood L, Friend SH. Predictive, personalized, preventive, participatory (P4) cancer medicine. Nat Rev Clin Oncol. 2011;8(3):184-187.
+    insights_for_site: >
+      Denna referens bör i första hand användas under metabola-syndromet i DIAGNOSER.
+  - id: "godfrey_2017_maternal_obesity"
+    title: "Influence of Maternal Obesity on Long Term Health of Ofspring"
+    authors: "Keith M. Godfrey, et al."
+    year: 2017
+    journal: "The Lancet Diabetes & Endocrinology"
+    doi: "10.1016/s2213-8587(17)30109-9"
+    url: "https://doi.org/10.1016/S2213-8587(17)30109-9"
+    site_section: "diagnoser"
+    site_subpage: "diagnoser/overvikt"
+    category: ["epigenitik", "graviditet", "metabol hälsa"]
+    tags: ["DOHaD", "epigenetics", "maternal obesity", "offspring health"]
+    summary: >
+      Visar hur moderns vikt, metabolism och inflammation förändrar epigenitik, hungerreglering och metabol risk hos barnet
+    insights_for_site: >
+      Denna referens bör i första hand användas under overvikt i DIAGNOSER.
+  - id: "association_between_lowering_ldl_c_and_cardiovascular_risk_reduction_among_different_therapeutic_interventions_2016"
+    title: "Association between lowering LDL-C and cardiovascular risk reduction among different therapeutic interventions"
+    authors: "Silverman MG, Ference BA, Im K, et al"
+    year: 2016
+    journal: "JAMA"
+    doi: ""
+    url: ""
+    site_section: "lakemedel"
+    site_subpage: "lakemedel/blodfetter"
+    category: []
+    tags: []
+    summary: >
+      Silverman MG, Ference BA, Im K, et al. Association between lowering LDL-C and cardiovascular risk reduction among different therapeutic interventions. JAMA. 2016;316(12):1289-1297.
+    insights_for_site: >
+      Denna referens bör i första hand användas under blodfetter i LAKEMEDEL.
+  - id: "evolocumab_and_clinical_outcomes_in_patients_with_cardiovascular_disease_2017"
+    title: "Evolocumab and clinical outcomes in patients with cardiovascular disease"
+    authors: "Sabatine MS, Giugliano RP, Keech AC, et al"
+    year: 2017
+    journal: "N Engl J Med"
+    doi: ""
+    url: ""
+    site_section: "lakemedel"
+    site_subpage: "lakemedel/blodfetter"
+    category: []
+    tags: []
+    summary: >
+      Sabatine MS, Giugliano RP, Keech AC, et al. Evolocumab and clinical outcomes in patients with cardiovascular disease. N Engl J Med. 2017;376(18):1713-1722.
+    insights_for_site: >
+      Denna referens bör i första hand användas under blodfetter i LAKEMEDEL.
+  - id: "denosumab_for_prevention_of_fractures_in_postmenopausal_women_with_osteoporosis_2009"
+    title: "Denosumab for prevention of fractures in postmenopausal women with osteoporosis"
+    authors: "Cummings SR, San Martin J, McClung MR, et al"
+    year: 2009
+    journal: "N Engl J Med"
+    doi: ""
+    url: ""
+    site_section: "lakemedel"
+    site_subpage: "lakemedel/metabolism-och-foljdeffekter"
+    category: []
+    tags: []
+    summary: >
+      Cummings SR, San Martin J, McClung MR, et al. Denosumab for prevention of fractures in postmenopausal women with osteoporosis. N Engl J Med. 2009;361(8):756-765.
+    insights_for_site: >
+      Denna referens bör i första hand användas under metabolism-och-foljdeffekter i LAKEMEDEL.
+  - id: "2019_acc_aha_guideline_on_the_primary_prevention_of_cardiovascular_disease_2019"
+    title: "2019 ACC/AHA guideline on the primary prevention of cardiovascular disease"
+    authors: "Arnett DK, Blumenthal RS, Albert MA, et al"
+    year: 2019
+    journal: ""
+    doi: ""
+    url: ""
+    site_section: "lakemedel"
+    site_subpage: "lakemedel/metabolism-och-foljdeffekter"
+    category: []
+    tags: []
+    summary: >
+      Arnett DK, Blumenthal RS, Albert MA, et al. 2019 ACC/AHA guideline on the primary prevention of cardiovascular disease. Circulation. 2019;140(11):e596-e646.
+    insights_for_site: >
+      Denna referens bör i första hand användas under metabolism-och-foljdeffekter i LAKEMEDEL.
+  - id: "pharmacological_management_of_osteoporosis_in_postmenopausal_women_an_endocrine_society_guideline_2019"
+    title: "Pharmacological management of osteoporosis in postmenopausal women: an Endocrine Society guideline"
+    authors: "Eastell R, Rosen CJ, Black DM, et al"
+    year: 2019
+    journal: "J Clin Endocrinol Metab"
+    doi: ""
+    url: ""
+    site_section: "lakemedel"
+    site_subpage: "lakemedel/metabolism-och-foljdeffekter"
+    category: []
+    tags: []
+    summary: >
+      Eastell R, Rosen CJ, Black DM, et al. Pharmacological management of osteoporosis in postmenopausal women: an Endocrine Society guideline. J Clin Endocrinol Metab. 2019;104(5):1595-1622.
+    insights_for_site: >
+      Denna referens bör i första hand användas under metabolism-och-foljdeffekter i LAKEMEDEL.
+  - id: "human_and_artificial_intelligence_topol_2019"
+    title: "High Performance Medicine: The Convergence of Human and Artificial Intelligence"
+    authors: "Topol, E."
+    year: 2019
+    journal: ""
+    doi: "10.1038/s41591-018-0300-7"
+    url: "https://doi.org/10.1038/s41591-018-0300-7"
+    site_section: "matvarden"
+    site_subpage: "matvarden/egen-monitorering"
+    category: ["AI", "digital hälsa", "framtidsmedicin"]
+    tags: ["artificial intelligence", "patient-centered care", "precision health", "wearables"]
+    summary: >
+      Artikeln beskriver hur AI integreras i diagnostik, precention och kliniska beslut och hur detta kommer att förändra sjukvården
+    insights_for_site: >
+      Denna referens bör i första hand användas under egen-monitorering i MATVARDEN.
+  - id: "developmental_origins_of_disease_paradigm_a_mechanistic_and_evolutionary_perspective_2004"
+    title: "Developmental origins of disease paradigm: a mechanistic and evolutionary perspective"
+    authors: "Gluckman PD, Hanson MA"
+    year: 2004
+    journal: "Pediatr Res"
+    doi: ""
+    url: ""
+    site_section: "risk"
+    site_subpage: "risk/arftlighet"
+    category: []
+    tags: []
+    summary: >
+      Gluckman PD, Hanson MA. Developmental origins of disease paradigm: a mechanistic and evolutionary perspective. Pediatr Res. 2004;56(3):311-317.
+    insights_for_site: >
+      Denna referens bör i första hand användas under arftlighet i RISK.
+  - id: "the_developmental_origins_of_adult_disease_2004"
+    title: "The developmental origins of adult disease"
+    authors: "Barker DJP"
+    year: 2004
+    journal: "J Am Coll Nutr"
+    doi: ""
+    url: ""
+    site_section: "risk"
+    site_subpage: "risk/arftlighet"
+    category: []
+    tags: []
+    summary: >
+      Barker DJP. The developmental origins of adult disease. J Am Coll Nutr. 2004;23(6 Suppl):588S-595S.
+    insights_for_site: >
+      Denna referens bör i första hand användas under arftlighet i RISK.
+  - id: "gluckman_hanson_2004"
+    title: "The developmental origins of health and disease: an overview"
+    authors: "Gluckman P. D.; Hanson, M. A."
+    year: 2004
+    journal: "Cambridge University Press / Early Human Development"
+    doi: "10.1016/j.earlhumdev.2004.04.003"
+    url: "https://doi.org/10.1016/j.earlhumdev.2004.04.003"
+    site_section: "risk"
+    site_subpage: "risk/arftlighet"
+    category: ["kardiometabola sjukdomar", "metabolism", "utvecklingsbiologi"]
+    tags: ["epigenetics", "inflammation", "maternal health", "metabolic programning"]
+    summary: >
+      En systematisk genomgång av molekylära mekanismer som kopplar
+      fostermiljö, epigenetiska förändringar och framtida risk för
+      metabola sjukdomar. Ett av de tydligaste bevisen för biologisk
+      “startlinje”.
+    insights_for_site: >
+      Denna referens bör i första hand användas under arftlighet i RISK.
+  - id: "neuroscience_molecular_biology_and_the_childhood_roots_of_health_disparities_2009"
+    title: "Neuroscience, molecular biology, and the childhood roots of health disparities"
+    authors: "Shonkoff JP, Boyce WT, McEwen BS"
+    year: 2009
+    journal: "JAMA"
+    doi: ""
+    url: ""
+    site_section: "risk"
+    site_subpage: "risk/arftlighet"
+    category: []
+    tags: []
+    summary: >
+      Shonkoff JP, Boyce WT, McEwen BS. Neuroscience, molecular biology, and the childhood roots of health disparities. JAMA. 2009;301(21):2252-2259.
+    insights_for_site: >
+      Denna referens bör i första hand användas under arftlighet i RISK.
+  - id: "shared_decision_making_a_model_for_clinical_practice_2012"
+    title: "Shared decision making: a model for clinical practice"
+    authors: "Elwyn G, Frosch D, Thomson R, et al"
+    year: 2012
+    journal: "J Gen Intern Med"
+    doi: ""
+    url: ""
+    site_section: "risk"
+    site_subpage: "risk/arftlighet"
+    category: []
+    tags: []
+    summary: >
+      Elwyn G, Frosch D, Thomson R, et al. Shared decision making: a model for clinical practice. J Gen Intern Med. 2012;27(10):1361-1367.
+    insights_for_site: >
+      Denna referens bör i första hand användas under arftlighet i RISK.
+  - id: "early_developmental_conditioning_of_later_health_and_disease_physiology_or_pathophysiology_physiol_rev_2014"
+    title: "Early developmental conditioning of later health and disease: physiology or pathophysiology? Physiol Rev"
+    authors: "Hanson MA, Gluckman PD"
+    year: 2014
+    journal: "Early developmental conditioning of later health and disease: physiology or pathophysiology? Physiol Rev"
+    doi: ""
+    url: ""
+    site_section: "risk"
+    site_subpage: "risk/arftlighet"
+    category: []
+    tags: []
+    summary: >
+      Hanson MA, Gluckman PD. Early developmental conditioning of later health and disease: physiology or pathophysiology? Physiol Rev. 2014;94(4):1027-1076.
+    insights_for_site: >
+      Denna referens bör i första hand användas under arftlighet i RISK.
+  - id: "interventions_for_enhancing_medication_adherence_2014"
+    title: "Interventions for enhancing medication adherence"
+    authors: "Nieuwlaat R, Wilczynski N, Navarro T, et al"
+    year: 2014
+    journal: "Cochrane Database Syst Rev"
+    doi: ""
+    url: ""
+    site_section: "risk"
+    site_subpage: "risk/arftlighet"
+    category: []
+    tags: []
+    summary: >
+      Nieuwlaat R, Wilczynski N, Navarro T, et al. Interventions for enhancing medication adherence. Cochrane Database Syst Rev. 2014;(11):CD000011.
+    insights_for_site: >
+      Denna referens bör i första hand användas under arftlighet i RISK.
+  - id: "the_social_determinants_of_health_it_s_time_to_consider_the_causes_of_the_causes_2014"
+    title: "The social determinants of health: it's time to consider the causes of the causes"
+    authors: "Braveman P, Gottlieb L"
+    year: 2014
+    journal: "Public Health Rep"
+    doi: ""
+    url: ""
+    site_section: "risk"
+    site_subpage: "risk/arftlighet"
+    category: []
+    tags: []
+    summary: >
+      Braveman P, Gottlieb L. The social determinants of health: it's time to consider the causes of the causes. Public Health Rep. 2014;129 Suppl 2:19-31.
+    insights_for_site: >
+      Denna referens bör i första hand användas under arftlighet i RISK.
+  - id: "build_back_fairer_the_covid_19_marmot_review_2020"
+    title: "Build Back Fairer: The COVID-19 Marmot Review"
+    authors: "Marmot M, Allen J, Goldblatt P, et al"
+    year: 2020
+    journal: "The Pandemic, Socioeconomic and Health Inequalities in England"
+    doi: ""
+    url: ""
+    site_section: "risk"
+    site_subpage: "risk/arftlighet"
+    category: []
+    tags: []
+    summary: >
+      Marmot M, Allen J, Goldblatt P, et al. Build Back Fairer: The COVID-19 Marmot Review. The Pandemic, Socioeconomic and Health Inequalities in England. Institute of Health Equity; 2020.
+    insights_for_site: >
+      Denna referens bör i första hand användas under arftlighet i RISK.
+  - id: "socioeconomic_inequality_and_the_development_of_obesity_and_diabetes_across_the_life_course_a_review_2023"
+    title: "Socioeconomic inequality and the development of obesity and diabetes across the life course: a review"
+    authors: "Nobile S, Marchi J, Birtles D, et al"
+    year: 2023
+    journal: "BMC Public Health"
+    doi: ""
+    url: ""
+    site_section: "risk"
+    site_subpage: "risk/arftlighet"
+    category: []
+    tags: []
+    summary: >
+      Nobile S, Marchi J, Birtles D, et al. Socioeconomic inequality and the development of obesity and diabetes across the life course: a review. BMC Public Health. 2023;23:1082.
+    insights_for_site: >
+      Denna referens bör i första hand användas under arftlighet i RISK.
+  - id: "national_heart_lung_and_blood_institute_nhlbi"
+    title: "National Heart, Lung, and Blood Institute (NHLBI)"
+    authors: "Framingham Heart Study"
+    year: ""
+    journal: "Programhistorik och kohortbeskrivning."
+    doi: ""
+    url: ""
+    site_section: "risk"
+    site_subpage: "risk/framingham"
+    category: []
+    tags: []
+    summary: >
+      Framingham Heart Study. National Heart, Lung, and Blood Institute (NHLBI). Programhistorik och kohortbeskrivning.
+    insights_for_site: >
+      Denna referens bör i första hand användas under framingham i RISK.
+  - id: "contributions_of_the_framingham_study_to_the_conquest_of_coronary_artery_disease_1988"
+    title: "Contributions of the Framingham Study to the conquest of coronary artery disease"
+    authors: "Kannel WB"
+    year: 1988
+    journal: "Am J Cardiol"
+    doi: ""
+    url: ""
+    site_section: "risk"
+    site_subpage: "risk/framingham"
+    category: []
+    tags: []
+    summary: >
+      Kannel WB. Contributions of the Framingham Study to the conquest of coronary artery disease. Am J Cardiol. 1988;62(16):1109-1112.
+    insights_for_site: >
+      Denna referens bör i första hand användas under framingham i RISK.
+  - id: "the_metabolic_syndrome_2005"
+    title: "The metabolic syndrome"
+    authors: "Eckel RH, Grundy SM, Zimmet PZ"
+    year: 2005
+    journal: "Lancet"
+    doi: ""
+    url: ""
+    site_section: "risk"
+    site_subpage: "risk/framingham"
+    category: []
+    tags: []
+    summary: >
+      Eckel RH, Grundy SM, Zimmet PZ. The metabolic syndrome. Lancet. 2005;365(9468):1415-1428.
+    insights_for_site: >
+      Denna referens bör i första hand användas under framingham i RISK.
+  - id: "metabolic_syndrome_connecting_and_reconciling_cardiovascular_and_diabetes_worlds_2006"
+    title: "Metabolic syndrome: connecting and reconciling cardiovascular and diabetes worlds"
+    authors: "Grundy SM"
+    year: 2006
+    journal: "J Am Coll Cardiol"
+    doi: ""
+    url: ""
+    site_section: "risk"
+    site_subpage: "risk/framingham"
+    category: []
+    tags: []
+    summary: >
+      Grundy SM. Metabolic syndrome: connecting and reconciling cardiovascular and diabetes worlds. J Am Coll Cardiol. 2006;47(6):1093-1100.
+    insights_for_site: >
+      Denna referens bör i första hand användas under framingham i RISK.
+  - id: "metabolic_syndrome_update_2016"
+    title: "Metabolic syndrome update"
+    authors: "Grundy SM"
+    year: 2016
+    journal: "Trends Cardiovasc Med"
+    doi: ""
+    url: ""
+    site_section: "risk"
+    site_subpage: "risk/framingham"
+    category: []
+    tags: []
+    summary: >
+      Grundy SM. Metabolic syndrome update. Trends Cardiovasc Med. 2016;26(4):364-373.
+    insights_for_site: >
+      Denna referens bör i första hand användas under framingham i RISK.
+  - id: "the_global_epidemic_of_the_metabolic_syndrome_2018"
+    title: "The Global Epidemic of the Metabolic Syndrome"
+    authors: "Saklayen MG"
+    year: 2018
+    journal: "Curr Hypertens Rep"
+    doi: ""
+    url: ""
+    site_section: "risk"
+    site_subpage: "risk/framingham"
+    category: []
+    tags: []
+    summary: >
+      Saklayen MG. The Global Epidemic of the Metabolic Syndrome. Curr Hypertens Rep. 2018;20(2):12.
+    insights_for_site: >
+      Denna referens bör i första hand användas under framingham i RISK.
+  - id: "prediabetes_a_high_risk_state_for_diabetes_development_2012"
+    title: "Prediabetes: a high-risk state for diabetes development"
+    authors: "Tabak AG, Herder C, Rathmann W, Brunner EJ, Kivimaki M"
+    year: 2012
+    journal: "Lancet"
+    doi: ""
+    url: ""
+    site_section: "risk"
+    site_subpage: "risk/primarvarden"
+    category: []
+    tags: []
+    summary: >
+      Tabak AG, Herder C, Rathmann W, Brunner EJ, Kivimaki M. Prediabetes: a high-risk state for diabetes development. Lancet. 2012;379(9833):2279-2290.
+    insights_for_site: >
+      Denna referens bör i första hand användas under primarvarden i RISK.
+  - id: "who_best_buys_2017"
+    title: "Best Buys and other recommended interventions for the prevention and control of noncommunicable diseases"
+    authors: "World Health Organization"
+    year: 2017
+    journal: "Tackling NCDs: \"Best Buys\" and other recommended interventions for the prevention and control of noncommunicable diseases"
+    doi: ""
+    url: ""
+    site_section: "risk"
+    site_subpage: "risk/primarvarden"
+    category: []
+    tags: []
+    summary: >
+      World Health Organization. Tackling NCDs: "Best Buys" and other recommended interventions for the prevention and control of noncommunicable diseases. Geneva: WHO; 2017 (updated 2023).
+    insights_for_site: >
+      Denna referens bör i första hand användas under primarvarden i RISK.
+  - id: "who2017best-buys-and-other-"
+    title: "Best Buys and Other Recommended Interventions for the Prevention and Control of Noncommunicable Diseases"
+    authors: "World Health Organization (WHO)"
+    year: 2017
+    journal: ""
+    doi: "978-92-4-155017-8"
+    url: "https://www.who.int/publications/i/item/WHO-NMH-NVI-17.9"
+    site_section: "risk"
+    site_subpage: "risk/primarvarden"
+    category: ["Hälsoekonomi", "Livsstilssjukdomar", "NCD (icke-smittsamma sjukdomar)", "Prevention", "folkhälsa"]
+    tags: ["NCDs", "Prevention", "cardiovascular disease", "cost-effectivness", "diabetes", "global health", "health policy", "low grade inflammation", "public health"]
+    summary: >
+      WHO sammanfattar de mest kostnadseffektiva interventionerna globalt för att förebygga och kontrollera icke-smittsamma sjukdomar (NCDs). “Best Buys” är åtgärder som kostar mindre än 100 USD per DALY som räddas och som har stark evidens för effekt. Fokus ligger på tobak, alkohol, fysisk aktivitet, kost, blodtryck, lipider och diabetes.
+    insights_for_site: >
+      Denna referens bör i första hand användas under primarvarden i RISK.
+  - id: "association_of_body_mass_index_with_lifetime_risk_of_cardiovascular_disease_and_compression_of_morbidity_2018"
+    title: "Association of body mass index with lifetime risk of cardiovascular disease and compression of morbidity"
+    authors: "Khan SS, Ning H, Wilkins JT, et al"
+    year: 2018
+    journal: "JAMA Cardiol"
+    doi: ""
+    url: ""
+    site_section: "risk"
+    site_subpage: "risk/primarvarden"
+    category: []
+    tags: []
+    summary: >
+      Khan SS, Ning H, Wilkins JT, et al. Association of body mass index with lifetime risk of cardiovascular disease and compression of morbidity. JAMA Cardiol. 2018;3(4):280-287.
+    insights_for_site: >
+      Denna referens bör i första hand användas under primarvarden i RISK.
+  - id: "prevention_and_control_of_hypertension_jacc_health_promotion_series_2018"
+    title: "Prevention and control of hypertension: JACC health promotion series"
+    authors: "Carey RM, Muntner P, Bosworth HB, Whelton PK"
+    year: 2018
+    journal: "J Am Coll Cardiol"
+    doi: ""
+    url: ""
+    site_section: "risk"
+    site_subpage: "risk/primarvarden"
+    category: []
+    tags: []
+    summary: >
+      Carey RM, Muntner P, Bosworth HB, Whelton PK. Prevention and control of hypertension: JACC health promotion series. J Am Coll Cardiol. 2018;72(11):1278-1293.
+    insights_for_site: >
+      Denna referens bör i första hand användas under primarvarden i RISK.
+  - id: "global_burden_of_87_risk_factors_in_204_countries_and_territories_1990_2019_a_systematic_analysis_for_the_global_burden_of_disease_study_2019_2019"
+    title: "Global burden of 87 risk factors in 204 countries and territories, 1990-2019: a systematic analysis for the Global Burden of Disease Study 2019"
+    authors: "GBD 2019 Risk Factors Collaborators"
+    year: 2019
+    journal: ""
+    doi: ""
+    url: ""
+    site_section: "risk"
+    site_subpage: "risk/primarvarden"
+    category: []
+    tags: []
+    summary: >
+      GBD 2019 Risk Factors Collaborators. Global burden of 87 risk factors in 204 countries and territories, 1990-2019: a systematic analysis for the Global Burden of Disease Study 2019. Lancet. 2020;396(10258):1223-1249.
+    insights_for_site: >
+      Denna referens bör i första hand användas under primarvarden i RISK.
+  - id: "health_literacy_development_for_the_prevention_and_control_of_noncommunicable_diseases_2022"
+    title: "Health literacy development for the prevention and control of noncommunicable diseases"
+    authors: "World Health Organization"
+    year: 2022
+    journal: "Health literacy development for the prevention and control of noncommunicable diseases"
+    doi: ""
+    url: ""
+    site_section: "risk"
+    site_subpage: "risk/primarvarden"
+    category: []
+    tags: []
+    summary: >
+      World Health Organization. Health literacy development for the prevention and control of noncommunicable diseases. Geneva: WHO; 2022.
+    insights_for_site: >
+      Denna referens bör i första hand användas under primarvarden i RISK.
+  - id: "steinhubl_digital_medicine_2015"
+    title: "Digital Medicine: A Primer on Measurement"
+    authors: "Steinbul S. Muse E. Topol E."
+    year: 2015
+    journal: "Proceedings of the National Academy of Sciences in the United States of America"
+    doi: "10.1073/pnas.1514754112"
+    url: "https://doi.org/10.1073/pnas.1514754112"
+    site_section: "vetenskap"
+    site_subpage: "vetenskap/ai-och-framtidens-lakare"
+    category: ["digital hälsa", "fysiologi", "monitorering"]
+    tags: ["continous monitoring", "precision medicine", "sensors"]
+    summary: >
+      Artikeln beskriver hur kroppens fysiologi kan mätas kontinuerligt
+          med digitala sensorer och hur dessa data kan användas för kliniska beslut.
+    insights_for_site: >
+      Denna referens bör i första hand användas under ai-och-framtidens-lakare i VETENSKAP.
+  - id: "pivotal_trial_of_an_autonomous_ai_based_diagnostic_system_for_detection_of_diabetic_retinopathy_in_primary_care_offices_2018"
+    title: "Pivotal trial of an autonomous AI-based diagnostic system for detection of diabetic retinopathy in primary care offices"
+    authors: "Abràmoff MD, Lavin PT, Birch M, Shah N, Folk JC"
+    year: 2018
+    journal: "NPJ Digit Med"
+    doi: ""
+    url: ""
+    site_section: "vetenskap"
+    site_subpage: "vetenskap/ai-och-framtidens-lakare"
+    category: []
+    tags: []
+    summary: >
+      Abràmoff MD, Lavin PT, Birch M, Shah N, Folk JC. Pivotal trial of an autonomous AI-based diagnostic system for detection of diabetic retinopathy in primary care offices. NPJ Digit Med. 2018;1:39.
+    insights_for_site: >
+      Denna referens bör i första hand användas under ai-och-framtidens-lakare i VETENSKAP.
+  - id: "topol_2019_high_performance_medicine"
+    title: "High-performance medicine: the convergence of human and artificial intelligence"
+    authors: "Topol EJ"
+    year: 2019
+    journal: "Nat Med"
+    doi: "10.1038/s41591-018-0300-7"
+    url: "https://doi.org/10.1038/s41591-018-0300-7"
+    site_section: "vetenskap"
+    site_subpage: "vetenskap/ai-och-framtidens-lakare"
+    category: []
+    tags: []
+    summary: >
+      Topol EJ. High-performance medicine: the convergence of human and artificial intelligence. Nat Med. 2019;25(1):44-56.
+    insights_for_site: >
+      Denna referens bör i första hand användas under ai-och-framtidens-lakare i VETENSKAP.
+  - id: "key_challenges_for_delivering_clinical_impact_with_artificial_intelligence_2019"
+    title: "Key challenges for delivering clinical impact with artificial intelligence"
+    authors: "Kelly CJ, Karthikesalingam A, Suleyman M, Corrado G, King D"
+    year: 2019
+    journal: "BMC Med"
+    doi: ""
+    url: ""
+    site_section: "vetenskap"
+    site_subpage: "vetenskap/ai-och-framtidens-lakare"
+    category: []
+    tags: []
+    summary: >
+      Kelly CJ, Karthikesalingam A, Suleyman M, Corrado G, King D. Key challenges for delivering clinical impact with artificial intelligence. BMC Med. 2019;17:195.
+    insights_for_site: >
+      Denna referens bör i första hand användas under ai-och-framtidens-lakare i VETENSKAP.
+  - id: "machine_learning_in_medicine_2019"
+    title: "Machine learning in medicine"
+    authors: "Rajkomar A, Dean J, Kohane I"
+    year: 2019
+    journal: "N Engl J Med"
+    doi: ""
+    url: ""
+    site_section: "vetenskap"
+    site_subpage: "vetenskap/ai-och-framtidens-lakare"
+    category: []
+    tags: []
+    summary: >
+      Rajkomar A, Dean J, Kohane I. Machine learning in medicine. N Engl J Med. 2019;380(14):1347-1358.
+    insights_for_site: >
+      Denna referens bör i första hand användas under ai-och-framtidens-lakare i VETENSKAP.
+  - id: "a_path_for_translation_of_machine_learning_products_into_healthcare_delivery_2020"
+    title: "A path for translation of machine learning products into healthcare delivery"
+    authors: "Sendak MP, D'Arcy J, Kashyap S, et al"
+    year: 2020
+    journal: "EMJ Innov"
+    doi: ""
+    url: ""
+    site_section: "vetenskap"
+    site_subpage: "vetenskap/ai-och-framtidens-lakare"
+    category: []
+    tags: []
+    summary: >
+      Sendak MP, D'Arcy J, Kashyap S, et al. A path for translation of machine learning products into healthcare delivery. EMJ Innov. 2020;4(1):23-33.
+    insights_for_site: >
+      Denna referens bör i första hand användas under ai-och-framtidens-lakare i VETENSKAP.
+  - id: "the_hallmarks_of_aging_2013"
+    title: "The hallmarks of aging"
+    authors: "López-Otín C, Blasco MA, Partridge L, Serrano M, Kroemer G"
+    year: 2013
+    journal: "Cell"
+    doi: ""
+    url: ""
+    site_section: "vetenskap"
+    site_subpage: "vetenskap/longevity-och-healthspan"
+    category: []
+    tags: []
+    summary: >
+      López-Otín C, Blasco MA, Partridge L, Serrano M, Kroemer G. The hallmarks of aging. Cell. 2013;153(6):1194-1217.
+    insights_for_site: >
+      Denna referens bör i första hand användas under longevity-och-healthspan i VETENSKAP.
+  - id: "geroscience_linking_aging_to_chronic_disease_2014"
+    title: "Geroscience: linking aging to chronic disease"
+    authors: "Kennedy BK, Berger SL, Brunet A, et al"
+    year: 2014
+    journal: "Cell"
+    doi: ""
+    url: ""
+    site_section: "vetenskap"
+    site_subpage: "vetenskap/longevity-och-healthspan"
+    category: []
+    tags: []
+    summary: >
+      Kennedy BK, Berger SL, Brunet A, et al. Geroscience: linking aging to chronic disease. Cell. 2014;159(4):709-713.
+    insights_for_site: >
+      Denna referens bör i första hand användas under longevity-och-healthspan i VETENSKAP.
+  - id: "facing_up_to_the_global_challenges_of_ageing_2018"
+    title: "Facing up to the global challenges of ageing"
+    authors: "Partridge L, Deelen J, Slagboom PE"
+    year: 2018
+    journal: "Nature"
+    doi: ""
+    url: ""
+    site_section: "vetenskap"
+    site_subpage: "vetenskap/longevity-och-healthspan"
+    category: []
+    tags: []
+    summary: >
+      Partridge L, Deelen J, Slagboom PE. Facing up to the global challenges of ageing. Nature. 2018;561(7721):45-56.
+    insights_for_site: >
+      Denna referens bör i första hand användas under longevity-och-healthspan i VETENSKAP.
+  - id: "tr1951the-framingham-study"
+    title: "The Framingham Study: Epidemiological Approaches to Heart Disease"
+    authors: "Dawber TR, Meadors GF, Moore FE"
+    year: 1951
+    journal: "American Journal of Public Health"
+    doi: "10.2105/ajph.41.3.279"
+    url: "https://doi.org/10.2105/AJPH.41.3.279"
+    site_section: "vetenskap"
+    site_subpage: "vetenskap/ovriga-kallor"
+    category: ["Hjärt-kärlrisk", "Longitudinella studier"]
+    tags: ["Framingham", "Prevention", "Risk factors", "public health"]
+    summary: >
+      Detta är den första vetenskapliga presentationen av Framinghamstudien. Författarna beskriver upplägget för en långsiktig populationsstudie där invånare i Framingham, Massachusetts, rekryterades för regelbundna medicinska undersökningar. Syftet var att identifiera faktorer som bidrar till hjärt–kärlsjukdom. Artikeln introducerar ett nytt medicinskt paradigm: att sjukdom kan förstås genom att följa risk över tid, inte bara behandla akuta händelser.
+    insights_for_site: >
+      Framingham var startpunkten för begreppet medicinska riskfaktorer.
+      	•	Studien visade att hypertoni, kolesterol och rökning är starka prediktorer för hjärt–kärlsjukdom.
+      	•	Den representerar övergången från “reparativ” medicin till prediktiv och preventiv medicin.
+      	•	Den är fundamentet för allt vi i dag kallar metabol risk, kardiovaskulär prevention och longitudinell mätning av hälsa.
+  - id: "barker_1995_fetal_origins"
+    title: "The Fetal Origins of Coronary Heart Disease"
+    authors: "David J. Barker et al."
+    year: 1995
+    journal: "BMJ"
+    doi: "10.1136/bmj.311.6998.171"
+    url: "https://doi.org/10.1136/bmj.311.6998.171"
+    site_section: "vetenskap"
+    site_subpage: "vetenskap/ovriga-kallor"
+    category: ["epigenitik", "folkhälsa", "metabol programmering"]
+    tags: ["DOHaD", "cardiocascular risk", "fetal programming", "low birth weight"]
+    summary: >
+      Klassisk studie som visade sambandet mellan låg födelsevikt och ökad risk
+          för hjärt-kärlsjukdom i vuxen ålder. Grunden för hela DOHaD-fältet.
+    insights_for_site: >
+      Denna referens bör i första hand användas under ovriga-kallor i VETENSKAP.
+  - id: "mormot_status_syndrome_2004"
+    title: "The Status Syndrome: How Social Standing Affects Our Health and Longevity"
+    authors: "Marmot, Michael"
+    year: 2004
+    journal: "Bok"
+    doi: "10.1093/ije/dyh113"
+    url: "https://doi.org/10.1093/ije/dyh113"
+    site_section: "vetenskap"
+    site_subpage: "vetenskap/ovriga-kallor"
+    category: ["DOHaD", "epidemilogi", "folkhälsa", "jämlikhet", "socialt arv", "stressfysiologi"]
+    tags: ["DOHaD-adjacent", "epidemiology", "inequality", "metabolic health", "public health", "social gradient", "stress physiology"]
+    summary: >
+      Hälsa följer en ddlig social gradient: varje steg ned i socioekonomisk status innebär sämre hälsaoavsett absolut fattigdom. Psykosocial stress, låg kontroll, otryckhet och bristande autonomi driver biolodisk dysreglering. Social ojämlighet påverkar stressaxlar, immunförsvar, blodtryck, metabolism och livslängd. Biologi och social miljö samverkar - sociala mönster blir biologiska mönster. Hälsoskillnader orsakas inte primärt av medicinsk vård utan av livsvilkor.
+    insights_for_site: >
+      Denna referens bör i första hand användas under ovriga-kallor i VETENSKAP.
+  - id: "gillman_2005_dohad"
+    title: "Developmental Origins of Health and Disease"
+    authors: "Matthew W. Gillman"
+    year: 2005
+    journal: "New England Journal of Medicine"
+    doi: "10.1056/nejmra050468"
+    url: "https://doi.org/10.1056/NEJMra050468"
+    site_section: "vetenskap"
+    site_subpage: "vetenskap/ovriga-kallor"
+    category: ["DOHaD", "epigenitik", "folkhälsa", "metabolism"]
+    tags: ["DOHaD", "NEJM", "epidemiology", "maternal health"]
+    summary: >
+      NEJMS artikel om hur foster- och tidig barndomsmiljö påverkar riskfaktorer för hjärt- kärlsjukdom, diabetes och fetma
+    insights_for_site: >
+      Denna referens bör i första hand användas under ovriga-kallor i VETENSKAP.
+  - id: "johnell2006an-estimate-of-the-w"
+    title: "An Estimate of the Worldwide Prevalence and Disability Associated with Osteoporotic Fractures"
+    authors: "Johnell, O. Kanis, J. A."
+    year: 2006
+    journal: ""
+    doi: "10.1007/s00198-006-0172-4"
+    url: "https://doi.org/10.1007/s00198-006-0172-4"
+    site_section: "vetenskap"
+    site_subpage: "vetenskap/ovriga-kallor"
+    category: ["Kostnadseffektivitet", "folkhälsa", "metabola tillstånd"]
+    tags: ["DALYs", "global burden", "non-communicable disease", "osteoporotic fracures"]
+    summary: >
+      Studien uppskattar global prevalens och funktionsnedsättning kopplad till osteoporotiska frakturer år 2000: ca 9 miljoner frakturer, fördelade på höft, underarm och rygg, samt ca 5,8 miljoner förlorade DALYs. Frakturerna stod globalt för ~0,83 % av bördan för icke-smittsamma sjukdomar och 1,75 % i Europa.  https://link.springer.com/content/pdf/10.1007/s00198-006-0172-4.pdf?utm_source=chatgpt.com
+    insights_for_site: >
+      Denna referens bör i första hand användas under ovriga-kallor i VETENSKAP.
+  - id: "hillman2008be-smart-exercise-yo"
+    title: "Be smart, exercise your heart: exercise effects on brain and cognitinon"
+    authors: "Charles H. Hillman, Kirk I Erickson, Arthur F. Kramer"
+    year: 2008
+    journal: ""
+    doi: "10.1038/nrn2298"
+    url: "https://doi.org/10.1038/nrn2298"
+    site_section: "vetenskap"
+    site_subpage: "vetenskap/ovriga-kallor"
+    category: ["Prevention", "fysisk aktivitet", "kognition"]
+    tags: ["Aerobic exersice", "ageing", "brain plasticity", "excecutive function", "hippocampus", "macrophage infiltration", "neurprotection", "physical activity"]
+    summary: >
+      Review som sammanfattar hur aerob fysisk aktivitet förbättrar kognition, strukturell hjärnplasticitet (bl.a. hippocampusvolym) och skyddar mot åldersrelaterad kognitiv svikt, med både humandata och djurstudier.
+    insights_for_site: >
+      Denna referens bör i första hand användas under ovriga-kallor i VETENSKAP.
+  - id: "Erickson_mfl_exercise_memory_22011"
+    title: "Exercise training increases size of hippocampus and improves memory"
+    authors: "Kirk I. Erickson, Michelle W. Voss, Ruchika Shaurya Prakash, m.fl."
+    year: 2011
+    journal: "Proceedings of the National Academy of Sciences"
+    doi: "10.1073/pnas.10159500108"
+    url: "https://doi.org/10.1073/pnas.1015950108"
+    site_section: "vetenskap"
+    site_subpage: "vetenskap/ovriga-kallor"
+    category: ["fysisk aktivitet", "kognition", "nervsystem"]
+    tags: ["aerobic exercise", "aging", "brain placticity", "hippocampus", "memory"]
+    summary: >
+      Randomiserad kontrollerad studie på äldre stillasittande vuxna där ett enkelt program med aerob träning under ett år ökade hippocampusvolumen och förbättrade minnesfunktionen jämfört med kontrollgrupp. Visar direkt strukturell plasticitet i en hjärnregion som är central för minne och tidig Alzheimersjukdom.
+    insights_for_site: >
+      Denna referens bör i första hand användas under ovriga-kallor i VETENSKAP.
+  - id: "lieberman2011the-evolution-of-hum"
+    title: "The Evolution of Human Physical Activity"
+    authors: "Daniel E. Lieberman"
+    year: 2011
+    journal: ""
+    doi: "1086/659952"
+    url: "https://doi.org/10.1086/659952"
+    site_section: "vetenskap"
+    site_subpage: "vetenskap/ovriga-kallor"
+    category: ["Antropologi", "Evolutionär medicin", "fysisk aktivitet", "metabolism"]
+    tags: ["Evolution", "Evolutionary biology", "Human physiology", "Hunter-gatherers", "metabolism", "physical activity"]
+    summary: >
+      Lieberman argumenterar för att både människans anatomi och metabolism är formade av en evolutionär miljö där uthållighetsrörelse, födosökande och varierad fysisk aktivitet var centrala. Han visar att brist på rörelse skapar en mismatch mellan modern livsstil och biologiska behov, vilket leder till metabola och neurobiologiska sjukdomar.
+    insights_for_site: >
+      • Människan är evolutionärt programmerad för rörelse i varierade former, inte stillasittande.
+      • Fysisk aktivitet är inte optimering — det är ett biologiskt grundkrav för hjärnans och metabolismens funktion.
+      • Rörelse och metabolism utvecklades tillsammans och bildar ett gemensamt system som inte går att separera.
+      • Många moderna sjukdomar (depression, ångest, insulinresistens, artros, kardiometabola sjukdomar) är uttryck för evolutionär mismatch.
+      • Hjärnan är ett metabolt organ som är beroende av rörelse för neuroplasticitet och emotionell reglering.
+      • Rörelse är därför inte en intervention — det är att återgå till biologisk baslinje.
+      • Fysisk aktivitet är kärnan i longevity-rörelsens mest evidensbaserade dimension: inte att förlänga livet, utan att fördjupa den friska delen av livet (healthspan).
+      • Den ursprungliga människan levde inte nödvändigtvis längre än vi gör — men hon mådde sannolikt betydligt bättre under de år hon faktiskt levde, eftersom hennes livsstil låg i linje med vår biologi.
+  - id: "topol_2012"
+    title: "The Creative Destruction of Medicine"
+    authors: "Eric Topol"
+    year: 2012
+    journal: ""
+    doi: ""
+    url: "https://www.basicbooks.com/titles/eric-topol/the-creative-destruction-of-medicine/9780465098519/"
+    site_section: "vetenskap"
+    site_subpage: "vetenskap/ovriga-kallor"
+    category: ["digital hälsa", "longevity", "precisionsmedicin"]
+    tags: ["AI", "genomics", "longevity", "personalized medicine", "wearables"]
+    summary: >
+      Topol argumenterar för att digitala sensorer, genomik och realtidsdata kommer
+      att omvandla sjukvården från ett reaktivt system till ett proaktivt,
+      individcentrerat ekosystem.
+    insights_for_site: >
+      Denna referens bör i första hand användas under ovriga-kallor i VETENSKAP.
+  - id: "doran2013high-cost-patients-c"
+    title: "High-Cost Patients: Challenges and Opportunities in Health Care"
+    authors: "Doran, T. Roland, M."
+    year: 2013
+    journal: "New England Journal of Medicine"
+    doi: "10.1056/nejmp1310469"
+    url: "https://doi.org/10.1056/NEJMp1310469"
+    site_section: "vetenskap"
+    site_subpage: "vetenskap/ovriga-kallor"
+    category: ["Hälsoekonomi", "Kroniska sjukdomar", "Sjukvårdssystem", "folkhälsa"]
+    tags: ["Prevention", "chronic disease", "cost concentration", "health care utilization", "high cost patients"]
+    summary: >
+      Perspektivartikel som beskriver hur en mycket liten andel av befolkningen
+          (cirka 1 % av patienterna) står för 20–30 % av sjukvårdskostnaderna.
+          Majoriteten av dessa är personer med komplexa, kroniska tillstånd och
+          ofta livsstilsrelaterade sjukdomar, med återkommande sjukhusvård och
+          bristande kontinuitet.
+    insights_for_site: >
+      Denna referens bör i första hand användas under ovriga-kallor i VETENSKAP.
+  - id: "pedersin_2013_muscle_secretory_organ"
+    title: "Muscle as a secretory organ"
+    authors: "Bente Klarlund Pedersen"
+    year: 2013
+    journal: "Comprehensive Physiology"
+    doi: "10.1002/cphy.c120033"
+    url: "https://doi.org/10.1002/cphy.c120033"
+    site_section: "vetenskap"
+    site_subpage: "vetenskap/ovriga-kallor"
+    category: ["Inflammation", "immunologi", "lever steatos", "metabolism", "myokiner", "träning"]
+    tags: ["exercice", "fatty liver", "immunology", "insulin sensitivity", "metabolism", "myokines", "systemic inflammation"]
+    summary: >
+      Översiktsartikel som etablerar skelettmuskel som endokrint organ. Beskriver myokiners roll i antiinflammation, förbättrad insulinkänslighet. Vra huvudreferens för rörelse som hormonell medicin
+    insights_for_site: >
+      Denna referens bör i första hand användas under ovriga-kallor i VETENSKAP.
+  - id: "mcdaid2013value-for-money-in-h"
+    title: "Value for Money in Health: Improving Efficiency and Resource Allocation"
+    authors: "David McDaid, Francesca Sassi"
+    year: 2013
+    journal: "ECD Publishing"
+    doi: "0.1787/9789264208592-en"
+    url: "https://doi.org/10.1787/9789264208592-en"
+    site_section: "vetenskap"
+    site_subpage: "vetenskap/ovriga-kallor"
+    category: ["Hälsoekonomi", "Kostnadseffektivitet", "Preventiv medicin", "folkhälsa"]
+    tags: ["Prevention", "cost-effectivness", "health economics", "health policy", "health systems", "policy", "public health", "resource allocation"]
+    summary: >
+      Comprehensive OECD analysis of how health systems can allocate resources
+      more efficiently by investing in prevention, early detection, and
+      cost-effective interventions. Demonstrates that many preventive measures
+      yield substantial economic returns and reduce long-term healthcare burden.
+    insights_for_site: >
+      Denna referens bör i första hand användas under ovriga-kallor i VETENSKAP.
+  - id: "raichlen_alexander_exercise_lifespan_2014"
+    title: "Exercise, APOE genotype, and the evolution of the human life span"
+    authors: "David A. Raichlen, Gene E. Alexander"
+    year: 2014
+    journal: "Trends in Neuroscience"
+    doi: "10.1016/j.tins.2014.03.001"
+    url: "https://doi.org/10.1016/j.tins.2014.03.001"
+    site_section: "vetenskap"
+    site_subpage: "vetenskap/ovriga-kallor"
+    category: ["evolution", "fysisk aktivitet", "nervsystem"]
+    tags: ["APOE", "brain evolution", "cognition", "longevity", "physical activity"]
+    summary: >
+      Översiktsartikel som argumenterar för at uthållighetsriktad fysisk aktivitet var en nyckelfaktor i människans evolution, både för hjärnans utveckling och för ett längre hälsospann. Författarna kopplar rörelse APO-genotyp och hjärnans sårbarhet/robusthet under åldrandet.
+    insights_for_site: >
+      Denna referens bör i första hand användas under ovriga-kallor i VETENSKAP.
+  - id: "perry_holmes_microglia_nd_2014"
+    title: "Microglial priming in neurodegenerative disease"
+    authors: "V. Hugh Perry, Clive Holmes"
+    year: 2014
+    journal: "Nature Reviews Neurology"
+    doi: "10.1038/nneurol.2014.38"
+    url: "https://doi.org/10.1038/nrneurol.2014.38"
+    site_section: "vetenskap"
+    site_subpage: "vetenskap/ovriga-kallor"
+    category: ["immunologi", "metabolism", "nervsystem"]
+    tags: ["Alzheimer's disease", "brain aging", "immune system", "microglia", "neuroinflammation"]
+    summary: >
+      Översiktsartikel som beskriver hur mikroglia kan bli “primade” av systemisk inflammation, åldrande och metabola signaler. Denna priming gör att hjärnan reagerar kraftigare på senare inflammatoriska tillstånd med hjärnans sjukdomar.
+    insights_for_site: >
+      Denna referens bör i första hand användas under ovriga-kallor i VETENSKAP.
+  - id: "al2015neuorinflammation-in"
+    title: "Neuorinflammation in Alzeimers´s desease"
+    authors: "Michael T. Heneka et al."
+    year: 2015
+    journal: ""
+    doi: "10.1016/s1474-442(15)70016-5"
+    url: "https://doi.org/10.1016/S1474-4422(15)70016-5"
+    site_section: "vetenskap"
+    site_subpage: "vetenskap/ovriga-kallor"
+    category: ["Alzeimer", "Immunology", "Neurodegeneration", "Neuroinflammation"]
+    tags: ["Alzeimer´s desease", "amyloid", "cytokines", "immunometabolism", "innate immunity", "microglia", "neuroinflammation", "tau pathology"]
+    summary: >
+      Stor översiktsartikel som visar att Alzheimers patogenes inte bara är en “neuronal sjukdom”, utan starkt beroende av immunologiska mekanismer: mikroglia, astrocyter, cytokiner, genetiska riskfaktorer kopplade till immunsvar och störd clearance av felveckade proteiner.
+    insights_for_site: >
+      Denna referens bör i första hand användas under ovriga-kallor i VETENSKAP.
+  - id: "TAME_barzialai_et_al_ 2016"
+    title: "Targeting Aging with Metformin (TAME): trial concept and rationale"
+    authors: "N. Barziali et al."
+    year: 2016
+    journal: "AFAR / trial overview"
+    doi: ""
+    url: "https://www.afar.org/tame-trial"
+    site_section: "vetenskap"
+    site_subpage: "vetenskap/ovriga-kallor"
+    category: ["clinical trial design", "longevity", "metformin"]
+    tags: ["ageing", "metformin", "multimorbidity"]
+    summary: >
+      TAME-studien är en planerad multicenterstudie där metformin testas som geroprotektiv behandling, med primära utfall i form av försröjd uppkomst av flera åldersrelaterade sjukdomar snarare än en enskild diagnos.
+    insights_for_site: >
+      Denna referens bör i första hand användas under ovriga-kallor i VETENSKAP.
+  - id: "nice2017bisphosphonates-for-"
+    title: "\"Bisphosphonates for treating osteoporosis (Technology Appraisal Guidance TA464)”"
+    authors: "National Institute for Health and Care Excellence (NICE)"
+    year: 2017
+    journal: ""
+    doi: ""
+    url: "https://www.nice.org.uk/guidance/ta464"
+    site_section: "vetenskap"
+    site_subpage: "vetenskap/ovriga-kallor"
+    category: ["Kostnadseffektivitet", "Preventiv medicin", "Primärvård"]
+    tags: ["bisphosphonates", "cost-effectiveness", "fracture prevention", "osteoporosis", "public health"]
+    summary: >
+      NICE Technology Appraisal TA464 rekommenderar oral och intravenös bisfosfonatbehandling
+      för vuxna med osteoporos som har bedömts ha hög risk för fragilitetsfraktur
+      (minst 1 % 10-års risk för fraktur enligt FRAX eller QFracture). Rekommendationerna
+      bygger på nätverks-metaanalyser som visar minskad frakturrisk, samt ekonomiska modeller
+      som fastställer att behandlingen är kostnadseffektiv inom NHS-ramverket.  https://www.nice.org.uk/guidance/ta464?utm_source=chatgpt.com
+    insights_for_site: >
+      Denna referens bör i första hand användas under ovriga-kallor i VETENSKAP.
+  - id: "hrv_norms_shaffer_ginsberg_2017"
+    title: "An Overview of Heart Rate Variability Metrics and Norms"
+    authors: "Shaffer, F. Ginsberg, J.P."
+    year: 2017
+    journal: "Frontiers in Public Health"
+    doi: "10.3389/fpubh.2017.00258"
+    url: "https://doi.org/10.3389/fpubh.2017.00258"
+    site_section: "vetenskap"
+    site_subpage: "vetenskap/ovriga-kallor"
+    category: ["HRV", "auronomt nervsystem", "stressfysiologi"]
+    tags: ["ANS", "heart rate variability", "parasympatethic tone", "stress"]
+    summary: >
+      En omfattande genomgång av HRV som fysiologiskt mått och dess kliniska relevans för normalvärden, autoreglering och samband med hälsa
+    insights_for_site: >
+      Denna referens bör i första hand användas under ovriga-kallor i VETENSKAP.
+  - id: "stress_adaptation_and_disease_allostasis_and_allostatic_load_1998"
+    title: "Stress, adaptation, and disease: Allostasis and allostatic load"
+    authors: "McEwen BS"
+    year: 1998
+    journal: "Ann N Y Acad Sci"
+    doi: ""
+    url: ""
+    site_section: "vetenskap"
+    site_subpage: "vetenskap/psyke-och-metabolism"
+    category: []
+    tags: []
+    summary: >
+      McEwen BS. Stress, adaptation, and disease: Allostasis and allostatic load. Ann N Y Acad Sci. 1998;840:33-44.
+    insights_for_site: >
+      Denna referens bör i första hand användas under psyke-och-metabolism i VETENSKAP.
+  - id: "vascular_risk_factors_and_depression_in_later_life_a_systematic_review_and_meta_analysis_2013"
+    title: "Vascular risk factors and depression in later life: A systematic review and meta-analysis"
+    authors: "Valkanova V, Ebmeier KP"
+    year: 2013
+    journal: "Biol Psychiatry"
+    doi: ""
+    url: ""
+    site_section: "vetenskap"
+    site_subpage: "vetenskap/psyke-och-metabolism"
+    category: []
+    tags: []
+    summary: >
+      Valkanova V, Ebmeier KP. Vascular risk factors and depression in later life: A systematic review and meta-analysis. Biol Psychiatry. 2013;73(5):406-413.
+    insights_for_site: >
+      Denna referens bör i första hand användas under psyke-och-metabolism i VETENSKAP.
+  - id: "dementia_prevention_intervention_and_care_2020_report_of_the_lancet_commission_2020"
+    title: "Dementia prevention, intervention, and care: 2020 report of the Lancet Commission"
+    authors: "Livingston G, Huntley J, Sommerlad A, et al"
+    year: 2020
+    journal: ""
+    doi: ""
+    url: ""
+    site_section: "vetenskap"
+    site_subpage: "vetenskap/psyke-och-metabolism"
+    category: []
+    tags: []
+    summary: >
+      Livingston G, Huntley J, Sommerlad A, et al. Dementia prevention, intervention, and care: 2020 report of the Lancet Commission. Lancet. 2020;396(10248):413-446.
+    insights_for_site: >
+      Denna referens bör i första hand användas under psyke-och-metabolism i VETENSKAP.
+  - id: "aging_and_osteoarthritis_the_role_of_chondrocyte_senescence_and_aging_changes_in_the_cartilage_matrix_2009"
+    title: "Aging and osteoarthritis: the role of chondrocyte senescence and aging changes in the cartilage matrix"
+    authors: "Loeser RF"
+    year: 2009
+    journal: "Osteoarthritis Cartilage"
+    doi: ""
+    url: ""
+    site_section: "vetenskap"
+    site_subpage: "vetenskap/rorelse-och-vitalitet"
+    category: []
+    tags: []
+    summary: >
+      Loeser RF. Aging and osteoarthritis: the role of chondrocyte senescence and aging changes in the cartilage matrix. Osteoarthritis Cartilage. 2009;17(8):971-979.
+    insights_for_site: >
+      Denna referens bör i första hand användas under rorelse-och-vitalitet i VETENSKAP.
+  - id: "gait_speed_and_survival_in_older_adults_2011"
+    title: "Gait speed and survival in older adults"
+    authors: "Studenski S, Perera S, Patel K, et al"
+    year: 2011
+    journal: "JAMA"
+    doi: ""
+    url: ""
+    site_section: "vetenskap"
+    site_subpage: "vetenskap/rorelse-och-vitalitet"
+    category: []
+    tags: []
+    summary: >
+      Studenski S, Perera S, Patel K, et al. Gait speed and survival in older adults. JAMA. 2011;305(1):50-58.
+    insights_for_site: >
+      Denna referens bör i första hand användas under rorelse-och-vitalitet i VETENSKAP.
+  - id: "pedersen_saltin_2015_exercise_as_medicine"
+    title: "Exercise as medicine: evidence for prescribing exercise as therapy in chronic disease"
+    authors: "Pedersen BK, Saltin B"
+    year: 2015
+    journal: "Scand J Med Sci Sports"
+    doi: ""
+    url: ""
+    site_section: "vetenskap"
+    site_subpage: "vetenskap/rorelse-och-vitalitet"
+    category: []
+    tags: []
+    merged_from: 2
+    summary: >
+      Pedersen BK, Saltin B. Exercise as medicine - evidence for prescribing exercise as therapy in 26 different chronic diseases. Scand J Med Sci Sports. 2015;25 Suppl 3:1-72.
+    insights_for_site: >
+      Denna referens bör i första hand användas under rorelse-och-vitalitet i VETENSKAP.
+  - id: "osteoporosis_in_men_a_review_2020"
+    title: "Osteoporosis in men: a review"
+    authors: "Clynes MA, Gregson CL, Bruyere O, Cooper C"
+    year: 2020
+    journal: "Bone"
+    doi: ""
+    url: ""
+    site_section: "vetenskap"
+    site_subpage: "vetenskap/rorelse-och-vitalitet"
+    category: []
+    tags: []
+    summary: >
+      Clynes MA, Gregson CL, Bruyere O, Cooper C. Osteoporosis in men: a review. Bone. 2020;133:115-121.
+    insights_for_site: >
+      Denna referens bör i första hand användas under rorelse-och-vitalitet i VETENSKAP.
