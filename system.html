@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MetabolismX System</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header simple">
+      <div class="container">
+        <a class="site-brand" href="index.html">Metabolism X™</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="system section system-page" id="system">
+        <div class="container system-page-container">
+          <div class="system-map" aria-label="Systemkarta">
+            <svg
+              class="system-map-svg"
+              viewBox="0 0 980 860"
+              role="img"
+              aria-labelledby="system-map-title system-map-desc"
+            >
+              <title id="system-map-title">MetabolismX systemkarta</title>
+              <desc id="system-map-desc">
+                En sammanhängande hexagonal struktur där Vetenskap ligger i centrum och delar kant med sex relaterade områden runt omkring.
+              </desc>
+
+              <defs>
+                <linearGradient id="hex-fill" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#fcfbf7" />
+                  <stop offset="58%" stop-color="#f5f2ea" />
+                  <stop offset="100%" stop-color="#ece5d2" />
+                </linearGradient>
+                <linearGradient id="hex-stroke" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#d4c49a" />
+                  <stop offset="50%" stop-color="#b89f67" />
+                  <stop offset="100%" stop-color="#dacdab" />
+                </linearGradient>
+                <polygon
+                  id="hex"
+                  points="-120,0 -60,-104 60,-104 120,0 60,104 -60,104"
+                />
+              </defs>
+
+              <a href="risk/index.html" class="hex-link" aria-label="Risk">
+                <g class="hex-node" transform="translate(490 212)">
+                  <use href="#hex"></use>
+                  <text x="0" y="-4">RISK</text>
+                  <text class="subtext" x="0" y="28">Hur sjukdom byggs upp över tid.</text>
+                </g>
+              </a>
+
+              <a href="livsstil/index.html" class="hex-link" aria-label="Livsstil">
+                <g class="hex-node" transform="translate(310 316)">
+                  <use href="#hex"></use>
+                  <text x="0" y="-4">LIVSSTIL</text>
+                  <text class="subtext" x="0" y="28">Biologi i vardaglig praktik.</text>
+                </g>
+              </a>
+
+              <a href="lakemedel/index.html" class="hex-link" aria-label="Läkemedel">
+                <g class="hex-node" transform="translate(670 316)">
+                  <use href="#hex"></use>
+                  <text x="0" y="-4">LÄKEMEDEL</text>
+                  <text class="subtext" x="0" y="28">Farmakologiska verktyg.</text>
+                </g>
+              </a>
+
+              <a href="vetenskap/index.html" class="hex-link" aria-label="Vetenskap">
+                <g class="hex-node hex-center" transform="translate(490 420)">
+                  <use href="#hex"></use>
+                  <text x="0" y="-4">VETENSKAP</text>
+                  <text class="subtext" x="0" y="28">Det som bär strukturen.</text>
+                </g>
+              </a>
+
+              <a href="matvarden/index.html" class="hex-link" aria-label="Mätvärden">
+                <g class="hex-node" transform="translate(310 524)">
+                  <use href="#hex"></use>
+                  <text x="0" y="-4">MÄTVÄRDEN</text>
+                  <text class="subtext" x="0" y="28">Hur kroppen kan följas över tid.</text>
+                </g>
+              </a>
+
+              <a href="diagnoser/index.html" class="hex-link" aria-label="Diagnoser">
+                <g class="hex-node" transform="translate(670 524)">
+                  <use href="#hex"></use>
+                  <text x="0" y="-4">DIAGNOSER</text>
+                  <text class="subtext" x="0" y="28">Kliniskt språk för riktning.</text>
+                </g>
+              </a>
+
+              <a href="halsocentral/index.html" class="hex-link" aria-label="Hälsocentral">
+                <g class="hex-node" transform="translate(490 628)">
+                  <use href="#hex"></use>
+                  <text x="0" y="-4">HÄLSOCENTRAL</text>
+                  <text class="subtext" x="0" y="28">Primärvård nära verkliga liv.</text>
+                </g>
+              </a>
+            </svg>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="site-imprint">© 2026 Solvinter Ltd</div>
+      </div>
+    </footer>
+  </body>
+</html>

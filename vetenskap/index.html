@@ -7,37 +7,35 @@
     <link rel="stylesheet" href="../styles.css">
   </head>
   <body>
+    <script>
+      document.body.dataset.referencesMode = "library";
+    </script>
     <header class="site-header">
       <div class="container">
-        <a class="site-brand" href="../">MetabolismX</a>
-        <nav class="site-nav" aria-label="Huvudnavigation">
-          <a href="../risk/">Risk</a>
-          <a href="../matvarden/">Mätvärden</a>
-          <a href="../diagnoser/">Diagnoser</a>
-          <a href="../lakemedel/">Läkemedel</a>
-          <a href="../vetenskap/">Vetenskap</a>
-        </nav>
+        <a class="site-brand" href="../index.html">Metabolism X™</a>
       </div>
     </header>
     <main class="container">
       <section class="page-header">
+        <nav class="section-cards-nav" aria-label="Navigera mellan sektioner">
+          <a class="section-card-link" href="../risk/index.html">Risk</a>
+          <a class="section-card-link" href="../livsstil/index.html">Livsstil</a>
+          <a class="section-card-link" href="../lakemedel/index.html">Läkemedel</a>
+          <a class="section-card-link is-active" href="../vetenskap/index.html">Vetenskap</a>
+          <a class="section-card-link" href="../matvarden/index.html">Mätvärden</a>
+          <a class="section-card-link" href="../diagnoser/index.html">Diagnoser</a>
+          <a class="section-card-link" href="../halsocentral/index.html">Hälsocentral</a>
+        </nav>
         <h1>Vetenskap</h1>
         <p>Här samlas referenser, korta sammanfattningar och det forskningsunderlag som bär hela strukturen.</p>
       </section>
-      <ul class="reference-list">
-        <li>
-          <h3>Study title</h3>
-          <p>Kort sammanfattning av varför referensen är viktig och hur den hjälper till att förstå området.</p>
-        </li>
-        <li>
-          <h3>Study title</h3>
-          <p>Kort sammanfattning av en annan studie, med fokus på klinisk betydelse och riktning.</p>
-        </li>
-        <li>
-          <h3>Study title</h3>
-          <p>Plats för vidare referensbibliotek, fördjupning och senare länkning mot den större YAML-strukturen.</p>
-        </li>
-      </ul>
+      <section class="reference-library" data-reference-library></section>
     </main>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="site-imprint">© 2026 Solvinter Ltd</div>
+      </div>
+    </footer>
+    <script src="../scripts/references.js"></script>
   </body>
 </html>

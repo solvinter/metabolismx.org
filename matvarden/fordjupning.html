@@ -9,32 +9,255 @@
   <body>
     <header class="site-header">
       <div class="container">
-        <a class="site-brand" href="../">MetabolismX</a>
+        <a class="site-brand" href="../index.html">Metabolism X™</a>
       </div>
     </header>
     <main class="container">
       <section class="page-header">
+        <nav class="section-cards-nav" aria-label="Navigera mellan sektioner">
+          <a class="section-card-link" href="../risk/index.html">Risk</a>
+          <a class="section-card-link" href="../livsstil/index.html">Livsstil</a>
+          <a class="section-card-link" href="../lakemedel/index.html">Läkemedel</a>
+          <a class="section-card-link" href="../vetenskap/index.html">Vetenskap</a>
+          <a class="section-card-link is-active" href="../matvarden/index.html">Mätvärden</a>
+          <a class="section-card-link" href="../diagnoser/index.html">Diagnoser</a>
+          <a class="section-card-link" href="../halsocentral/index.html">Hälsocentral</a>
+        </nav>
+        <a class="back-link" href="index.html" aria-label="Tillbaka till Mätvärden">←</a>
         <h1>Mätvärden – Fördjupning</h1>
         <p>Biologisk monitorering kräver standardisering, tolkning och klinisk försiktighet för att bli meningsfull.</p>
+        <div class="section-switch" aria-label="Växla mellan texter">
+          <a class="switch-link" href="oversikt.html">Översikt</a>
+          <a class="switch-link is-active" href="fordjupning.html">Fördjupning</a>
+        </div>
       </section>
-      <section class="content-stack">
-        <article class="content-card">
-          <h2>Mekanismer</h2>
-          <p>Mätvärden påverkas av dygnsvariation, aktivitet, stress, kost, läkemedel och mätteknik. Därför måste de förstås som tidsserier.</p>
-        </article>
-        <article class="content-card">
-          <h2>Klinisk betydelse</h2>
-          <p>Standardiserade mätningar hemma kan förbättra riskbedömning, men ersätter inte medicinsk värdering av helheten.</p>
-        </article>
-        <article class="content-card">
-          <h2>Evidens</h2>
-          <p>Digital medicin och kontinuerlig monitorering öppnar för bättre precision, men värdet beror på vad som faktiskt mäts och hur det följs upp.</p>
-        </article>
-        <article class="content-card">
-          <h2>Referenser</h2>
-          <p><a href="../vetenskap/index.html">[1] Study title</a><br><a href="../vetenskap/index.html">[2] Study title</a></p>
-        </article>
+      <section class="prose-page">
+        <p>Mätvärden i medicin är inte en samling isolerade siffror.</p>
+
+        <p>De är olika sätt att belysa samma sak från flera håll: hur kroppen reglerar energi, cirkulation, inflammation och återhämtning över tid.</p>
+
+        <p>I klinisk praxis används dessa mätningar inte bara för att ställa diagnos, utan för att förstå riktning, belastning och reserv.</p>
+
+        <hr>
+
+        <p>Blodprov är den mest tillgängliga formen av intern mätning.</p>
+
+        <p>De vanligaste markörerna ger information om olika delar av samma system:</p>
+
+        <h2>Glukosmetabolism</h2>
+        <ul>
+          <li>HbA1c → långsiktig glukosexponering</li>
+          <li>fastande glukos → basal nivå</li>
+          <li>fastande insulin → hur hårt systemet arbetar för att hålla glukos stabilt <a class="footnote-ref" href="../vetenskap/index.html#ref_diag_reaven_1988" data-ref="ref_diag_reaven_1988" title="Tidig signal om insulinresistens och metabol belastning innan glukos stiger tydligt."><sup>2</sup></a></li>
+        </ul>
+
+        <p>Fastande insulin är särskilt intressant eftersom det kan vara förhöjt långt innan blodsockret stiger. Det kan därmed ge en tidig signal om insulinresistens.</p>
+
+        <hr>
+
+        <h2>Blodfetter och lipoproteiner</h2>
+        <ul>
+          <li>LDL och HDL → traditionella mått</li>
+          <li>triglycerider → energibalans och metabol belastning</li>
+          <li>apolipoprotein B (ApoB) → antal aterogena partiklar <a class="footnote-ref" href="../vetenskap/index.html#ref_measure_01" data-ref="ref_measure_01" title="ApoB speglar antalet aterogena partiklar och är ofta mer direkt kopplat till kardiovaskulär risk än LDL ensam."><sup>1</sup></a></li>
+        </ul>
+
+        <p>ApoB anses i många sammanhang vara ett mer direkt mått på aterosklerotisk risk än LDL, eftersom det speglar partikelantal snarare än kolesterolinnehåll.</p>
+
+        <hr>
+
+        <h2>Inflammation</h2>
+        <ul>
+          <li>högkänsligt CRP (hs-CRP) → låggradig inflammation</li>
+          <li>SR → mer ospecifik inflammationsmarkör</li>
+        </ul>
+
+        <p>Inflammation är inte en sjukdom i sig, utan ett tillstånd som påverkar flera system samtidigt, inklusive kärl, metabolism och nervsystem.</p>
+
+        <hr>
+
+        <h2>Lever och metabolism</h2>
+        <ul>
+          <li>ALAT, ASAT → leverpåverkan</li>
+          <li>tecken på steatos, fettlever, kan ibland anas indirekt</li>
+        </ul>
+
+        <p>Levern är central i energihantering och påverkas tidigt vid metabol obalans.</p>
+
+        <hr>
+
+        <h2>Hormonella system</h2>
+        <ul>
+          <li>testosteron → muskelmassa, energi, driv</li>
+          <li>TSH, och ibland T4 eller T3, → sköldkörtelfunktion</li>
+          <li>kortisol → stressystem</li>
+        </ul>
+
+        <p>Hormoner är ofta svårare att tolka isolerat. De blir mer meningsfulla i relation till symtom och andra mätvärden.</p>
+
+        <hr>
+
+        <p>Utöver enstaka blodprover finns metoder som visar variation över tid.</p>
+
+        <h2>Kontinuerlig glukosmätning (CGM)</h2>
+
+        <p>CGM ger en kurva snarare än ett värde <a class="footnote-ref" href="../vetenskap/index.html#ref_measure_03" data-ref="ref_measure_03" title="Kontinuerlig glukosmätning gör variation, måltidsrespons och återhämtning mer synliga än enstaka glukosvärden."><sup>3</sup></a>.</p>
+
+        <p>Det gör det möjligt att se:</p>
+
+        <ul>
+          <li>hur snabbt blodsockret stiger</li>
+          <li>hur länge det ligger förhöjt</li>
+          <li>hur det påverkas av måltider, sömn och rörelse</li>
+        </ul>
+
+        <p>För många blir detta första gången sambandet mellan beteende och biologi blir konkret.</p>
+
+        <hr>
+
+        <h2>Glukosbelastning</h2>
+
+        <p>En oral glukosbelastning visar hur kroppen hanterar en definierad mängd glukos.</p>
+
+        <p>Den kan avslöja nedsatt glukostolerans även när fasta värden är normala.</p>
+
+        <hr>
+
+        <h2>Blodtryck över tid</h2>
+
+        <p>Enstaka blodtrycksmätningar kan vara missvisande.</p>
+
+        <p>Därför används ibland 24-timmars blodtryck, ABPM <a class="footnote-ref" href="../vetenskap/index.html#ref_measure_04" data-ref="ref_measure_04" title="24-timmars blodtryck ger bättre bild av faktisk belastning och är ofta mer prognostiskt än enstaka mottagningsvärden."><sup>4</sup></a>.</p>
+
+        <ul>
+          <li>visar variation över dygnet</li>
+          <li>kan upptäcka nattligt blodtryck</li>
+          <li>ger en mer representativ bild av belastning</li>
+        </ul>
+
+        <p>Detta är särskilt värdefullt när kliniska mätningar och vardagsbilden inte stämmer överens.</p>
+
+        <hr>
+
+        <h2>Hjärtrytm och registrering</h2>
+        <p>EKG</p>
+        <ul>
+          <li>visar elektrisk aktivitet i hjärtat</li>
+          <li>används för rytm, ledning och ibland indirekta tecken på belastning</li>
+        </ul>
+
+        <p>Holter-monitorering</p>
+        <ul>
+          <li>kontinuerlig EKG-registrering över 24–72 timmar</li>
+          <li>används för att fånga rytmrubbningar som inte syns vid enstaka mätning</li>
+        </ul>
+
+        <hr>
+
+        <h2>Hjärtfunktion och struktur</h2>
+        <p>Ultraljud av hjärtat, ekokardiografi,</p>
+        <ul>
+          <li>visar hjärtats pumpfunktion</li>
+          <li>väggtjocklek</li>
+          <li>klaffunktion</li>
+        </ul>
+
+        <p>Detta ger en bild av hur hjärtat faktiskt arbetar, inte bara hur det regleras.</p>
+
+        <hr>
+
+        <h2>Kroppskomposition</h2>
+
+        <p>Vikt är ett grovt mått.</p>
+
+        <p>Mer informativa metoder inkluderar:</p>
+
+        <ul>
+          <li>bioimpedans → uppskattning av fett och muskelmassa</li>
+          <li>DEXA → mer exakt analys av kroppskomposition och bentäthet <a class="footnote-ref" href="../vetenskap/index.html#ref_measure_06" data-ref="ref_measure_06" title="DEXA används för att bedöma kroppskomposition och bentäthet med högre precision än vikt eller enkla mått."><sup>6</sup></a></li>
+        </ul>
+
+        <p>DEXA används också för att bedöma osteoporos.</p>
+
+        <hr>
+
+        <h2>Pulsvariabilitet (HRV)</h2>
+
+        <p>Hjärtfrekvensvariabilitet beskriver variationen i tid mellan hjärtslag <a class="footnote-ref" href="../vetenskap/index.html#ref_measure_05" data-ref="ref_measure_05" title="HRV ger en indirekt bild av autonom balans, återhämtning och belastning över tid."><sup>5</sup></a>.</p>
+
+        <p>Det är ett indirekt mått på balansen i det autonoma nervsystemet:</p>
+
+        <ul>
+          <li>högre variabilitet → större parasympatisk, återhämtande, aktivitet</li>
+          <li>lägre variabilitet → högre sympatikus, stressaktivering</li>
+        </ul>
+
+        <p>HRV påverkas av:</p>
+
+        <ul>
+          <li>sömn</li>
+          <li>stress</li>
+          <li>träning</li>
+          <li>sjukdom</li>
+        </ul>
+
+        <p>Det är inte ett diagnostiskt verktyg i sig, men kan ge en bild av återhämtning och belastning över tid.</p>
+
+        <hr>
+
+        <h2>Klinisk tolkning</h2>
+
+        <p>Det är viktigt att förstå att inget enskilt mätvärde ger en fullständig bild.</p>
+
+        <p>Det som är kliniskt relevant är:</p>
+
+        <ul>
+          <li>mönster</li>
+          <li>förändring över tid</li>
+          <li>relation mellan olika system</li>
+        </ul>
+
+        <p>Mätvärden får sin betydelse först när de sätts i sammanhang.</p>
+
+        <hr>
+
+        <h2>Vad man faktiskt gör i vården</h2>
+
+        <p>Detta är i grunden det som sker i primärvård och på sjukhus, även om det inte alltid är synligt utifrån:</p>
+
+        <ul>
+          <li>man samlar information från olika system</li>
+          <li>man försöker förstå riktning</li>
+          <li>man avgör när intervention är rimlig</li>
+        </ul>
+
+        <p>Skillnaden är ofta inte kunskapen, utan när den tillämpas.</p>
+
+        <hr>
+
+        <h2>Slutsats</h2>
+
+        <p>Utvidgad provtagning och mätning handlar inte om att veta allt.</p>
+
+        <p>Det handlar om att:</p>
+
+        <ul>
+          <li>se tidigare</li>
+          <li>förstå bättre</li>
+          <li>agera mer proportionerligt</li>
+        </ul>
+
+        <p>Och i många fall:</p>
+
+        <p>att göra det som redan görs i sjukvården, men tidigare i processen och med större kontinuitet.</p>
+
       </section>
     </main>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="site-imprint">© 2026 Solvinter Ltd</div>
+      </div>
+    </footer>
+    <script src="../scripts/references.js"></script>
   </body>
 </html>

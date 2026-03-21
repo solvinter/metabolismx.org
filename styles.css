@@ -1,15 +1,20 @@
 :root {
-  --bg: #f6f5f1;
-  --surface: #fffdfa;
-  --surface-muted: #f0ede6;
-  --border: #d9d3c7;
-  --text: #20333a;
-  --text-muted: #55666d;
-  --accent: #58726f;
-  --accent-soft: #e5eeeb;
-  --shadow: 0 10px 30px rgba(32, 51, 58, 0.06);
-  --radius: 18px;
-  --container: 860px;
+  --bg: #f7f6f2;
+  --surface: #f8f7f3;
+  --surface-muted: #f6f4ee;
+  --surface-2: #f6f4ee;
+  --border: rgba(112, 103, 88, 0.08);
+  --line: rgba(112, 103, 88, 0.05);
+  --text: #223238;
+  --text-muted: #6b787b;
+  --accent: #627670;
+  --accent-hover: #566964;
+  --accent-soft: #edf1ed;
+  --shadow: none;
+  --radius: 24px;
+  --container: 1120px;
+  --hex-width: 260px;
+  --hex-height: 225px;
 }
 
 * {
@@ -22,7 +27,7 @@ html {
 
 body {
   margin: 0;
-  background: linear-gradient(180deg, #f8f7f3 0%, #f3f1eb 100%);
+  background: linear-gradient(180deg, #faf9f6 0%, var(--bg) 100%);
   color: var(--text);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   line-height: 1.6;
@@ -32,45 +37,41 @@ a {
   color: inherit;
 }
 
+a[href] {
+  text-decoration: none;
+}
+
 .container {
   width: min(100% - 2rem, var(--container));
   margin: 0 auto;
 }
 
 .site-header {
-  padding: 2rem 0 1rem;
+  display: flex;
+  justify-content: center;
+  padding: 3rem 0 2rem;
 }
 
 .site-header.simple {
   padding-bottom: 2rem;
 }
 
-.site-brand {
-  font-size: 0.95rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--text-muted);
-  text-decoration: none;
-}
-
-.site-nav {
+.site-header .container {
   display: flex;
-  gap: 0.75rem;
-  flex-wrap: wrap;
-  margin-top: 1rem;
+  justify-content: center;
 }
 
-.site-nav a {
-  padding: 0.65rem 0.95rem;
-  border: 1px solid var(--border);
-  border-radius: 999px;
-  background: rgba(255, 253, 250, 0.7);
+.site-brand {
+  text-align: center;
+  font-size: 1rem;
+  letter-spacing: 0.04em;
+  color: var(--text);
+  opacity: 0.9;
   text-decoration: none;
-  color: var(--text-muted);
 }
 
 .hero {
-  padding: 5rem 0 3rem;
+  padding: 4.5rem 0 2.5rem;
 }
 
 .hero-card,
@@ -85,14 +86,16 @@ a {
 }
 
 .hero-card {
-  padding: 3.25rem;
+  padding: 3.5rem;
+  border-radius: 28px;
 }
 
 .hero h1,
 .page-header h1 {
   margin: 0;
-  font-size: clamp(2rem, 5vw, 3.7rem);
-  line-height: 1.1;
+  font-size: clamp(2.4rem, 5vw, 4.2rem);
+  line-height: 1.05;
+  letter-spacing: -0.03em;
 }
 
 .hero p,
@@ -104,8 +107,14 @@ a {
 
 .intro {
   max-width: 42rem;
-  margin: 1.5rem 0 0;
-  font-size: 1.1rem;
+  margin: 1.4rem 0 0;
+  font-size: 1.08rem;
+}
+
+.hero-note {
+  margin-top: 1rem;
+  max-width: 38rem;
+  font-size: 0.98rem;
 }
 
 .actions {
@@ -128,7 +137,7 @@ a {
 }
 
 .button:hover {
-  background: #47615e;
+  background: var(--accent-hover);
 }
 
 .button-secondary {
@@ -142,7 +151,20 @@ a {
 }
 
 .section {
-  padding: 2rem 0 4rem;
+  padding: 3rem 0 5rem;
+}
+
+.system-page {
+  min-height: 100vh;
+  display: grid;
+  align-items: center;
+  scroll-margin-top: 0;
+}
+
+.system-page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .cards-grid,
@@ -180,8 +202,131 @@ a {
   text-decoration: none;
 }
 
+.system-map {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.system-map-svg {
+  width: min(100%, 1120px);
+  height: auto;
+  overflow: visible;
+}
+
+.hex-link {
+  cursor: pointer;
+}
+
+.hex-node {
+  fill: var(--surface);
+  color: var(--text);
+}
+
+.hex-node use {
+  fill: url(#hex-fill);
+  stroke: url(#hex-stroke);
+  stroke-width: 1.4;
+  vector-effect: non-scaling-stroke;
+  paint-order: stroke fill;
+}
+
+.hex-node text {
+  fill: currentColor;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-anchor: middle;
+}
+
+.hex-node .subtext {
+  fill: var(--text-muted);
+  font-size: 11.5px;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.hex-center text {
+  font-weight: 600;
+}
+
+.hex-link:hover .hex-node use {
+  fill: #fcfaf4;
+}
+
 .page-header {
-  padding: 3rem 0 1.5rem;
+  position: relative;
+  padding: 2.8rem 0 1.5rem;
+}
+
+.section-cards-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin: 0 0 1.2rem;
+  padding-right: 3rem;
+}
+
+.section-card-link {
+  display: inline-block;
+  padding: 0.45rem 0.8rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--text-muted);
+  background: rgba(248, 247, 243, 0.82);
+  font-size: 0.9rem;
+  line-height: 1.3;
+  text-decoration: none;
+}
+
+.section-card-link:hover,
+.section-card-link:focus {
+  color: var(--text);
+  background: rgba(246, 244, 238, 0.92);
+}
+
+.section-card-link.is-active {
+  color: var(--text);
+  border-color: rgba(112, 103, 88, 0.14);
+  background: rgba(244, 241, 233, 0.98);
+}
+
+.back-link {
+  position: absolute;
+  top: -0.9rem;
+  left: 0;
+  color: rgba(34, 50, 56, 0.78);
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.back-link:hover,
+.back-link:focus {
+  color: var(--text);
+}
+
+.section-switch {
+  display: flex;
+  gap: 0.7rem;
+  margin-top: 1rem;
+}
+
+.switch-link {
+  display: inline-block;
+  padding: 0.45rem 0.8rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--text-muted);
+  background: rgba(248, 247, 243, 0.84);
+  font-size: 0.92rem;
+}
+
+.switch-link.is-active {
+  color: var(--text);
+  border-color: rgba(112, 103, 88, 0.14);
+  background: rgba(244, 241, 233, 0.96);
 }
 
 .content-stack {
@@ -225,9 +370,237 @@ a {
   margin: 0;
 }
 
+.prose-page {
+  max-width: 44rem;
+  padding-bottom: 4rem;
+}
+
+.prose-page h2 {
+  margin: 2.5rem 0 0.85rem;
+  font-size: 1.18rem;
+  line-height: 1.3;
+}
+
+.prose-page p,
+.prose-page li {
+  color: var(--text);
+}
+
+.prose-page p {
+  margin: 0 0 1rem;
+}
+
+.prose-page ul,
+.prose-page ol {
+  margin: 0.75rem 0 1.1rem 1.15rem;
+  padding-left: 1rem;
+}
+
+.prose-page li {
+  margin: 0.32rem 0;
+}
+
+.prose-page hr {
+  margin: 1.8rem 0;
+  border: 0;
+  border-top: 1px solid var(--line);
+}
+
+.footnote-ref {
+  color: inherit;
+  text-decoration: none;
+}
+
+.footnote-ref sup {
+  font-size: 0.72em;
+  line-height: 0;
+}
+
+.footnote-number {
+  color: var(--text);
+}
+
+.section-footnotes {
+  margin: 1rem 0 1.5rem;
+  padding-top: 0.5rem;
+}
+
+.section-footnotes::before {
+  content: "";
+  display: block;
+  width: 3.2rem;
+  border-top: 1px solid rgba(34, 50, 56, 0.32);
+  margin-bottom: 0.48rem;
+}
+
+.section-footnotes-items {
+  display: block;
+}
+
+.section-footnotes p {
+  margin: 0 0 0.18rem;
+  font-size: 0.78em;
+  line-height: 1.28;
+  color: rgba(34, 50, 56, 0.72);
+  max-width: 38rem;
+  text-wrap: pretty;
+}
+
+.section-footnotes a,
+.section-footnotes a:any-link,
+.section-footnotes a:visited,
+.section-footnotes a:hover,
+.section-footnotes a:active,
+.section-footnotes a:focus {
+  color: inherit !important;
+  border-bottom: 0 !important;
+  text-decoration: none !important;
+  text-decoration-line: none !important;
+  -webkit-text-decoration: none !important;
+  box-shadow: none !important;
+  outline: none;
+}
+
+.section-footnotes a:hover,
+.section-footnotes a:focus {
+  box-shadow: inset 0 -1px 0 rgba(180, 160, 100, 0.12) !important;
+}
+
+.section-footnotes .footnote-text {
+  font-style: italic;
+}
+
+.section-footnotes .footnote-number {
+  font-size: 0.95em;
+  vertical-align: baseline;
+}
+
+.reference-library {
+  display: grid;
+  gap: 1rem;
+  padding-bottom: 4rem;
+}
+
+.reference-group {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.reference-group-header h2 {
+  margin: 0;
+  font-size: 0.92rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.reference-group-cards {
+  display: grid;
+  gap: 1rem;
+}
+
+.reference-card {
+  margin: 0;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: rgba(248, 247, 243, 0.78);
+  scroll-margin-top: 24vh;
+  transition: border-color 0.18s ease, background-color 0.18s ease, box-shadow 0.18s ease;
+}
+
+.reference-card.is-targeted {
+  border-color: rgba(166, 142, 82, 0.48);
+  background: rgba(249, 246, 236, 0.98);
+  box-shadow: 0 0 0 3px rgba(168, 144, 88, 0.08), 0 12px 28px rgba(140, 120, 76, 0.08);
+}
+
+.reference-summary {
+  display: block;
+  list-style: none;
+  cursor: pointer;
+  padding: 1.05rem 1.15rem 1rem;
+}
+
+.reference-summary::-webkit-details-marker {
+  display: none;
+}
+
+.reference-header h2 {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.38;
+  font-weight: 550;
+}
+
+.reference-short {
+  margin: 0.62rem 0 0;
+  color: var(--text);
+  font-size: 0.95rem;
+  line-height: 1.58;
+}
+
+.reference-toggle {
+  display: inline-block;
+  margin-top: 0.72rem;
+  font-size: 0.88rem;
+  color: var(--text-muted);
+}
+
+.reference-card[open] .reference-toggle {
+  content: "Visa mindre";
+}
+
+.reference-body {
+  padding: 0 1.15rem 1.15rem;
+  border-top: 1px solid var(--line);
+}
+
+.reference-long {
+  margin: 0.95rem 0 0.8rem;
+  color: var(--text);
+  line-height: 1.62;
+}
+
+.reference-meta-line {
+  margin: 0;
+  font-size: 0.82rem;
+  line-height: 1.45;
+  color: rgba(34, 50, 56, 0.62);
+}
+
+.reference-meta-line a,
+.reference-meta-line a:any-link,
+.reference-meta-line a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+.reference-meta-line a:hover,
+.reference-meta-line a:focus {
+  text-decoration: none;
+  box-shadow: inset 0 -1px 0 rgba(180, 160, 100, 0.16);
+}
+
 .page-footer {
   padding: 2rem 0 3rem;
   color: var(--text-muted);
+}
+
+.site-footer {
+  margin-top: 5rem;
+  padding: 2rem 0 3rem;
+}
+
+.site-footer .container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.site-imprint {
+  text-align: right;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  opacity: 0.55;
 }
 
 @media (max-width: 720px) {
@@ -240,5 +613,23 @@ a {
   .category-card,
   .option-card {
     padding: 1.35rem;
+  }
+
+  .reference-summary,
+  .reference-body {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .system-map-svg {
+    width: 100%;
+  }
+
+  .hex-node text {
+    font-size: 15px;
+  }
+
+  .hex-node .subtext {
+    font-size: 10px;
   }
 }
