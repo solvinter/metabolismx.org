@@ -151,7 +151,7 @@
     const host = document.querySelector("[data-reference-library]");
     if (!host) return;
 
-    const categoryOrder = ["Risk", "Mätvärden", "Diagnoser", "Livsstil", "Läkemedel", "Hälsocentral"];
+    const categoryOrder = ["Risk", "Mätvärden", "Diagnoser", "Livsstil", "Läkemedel", "Longevity"];
 
     const grouped = new Map();
     refs.forEach((ref) => {
