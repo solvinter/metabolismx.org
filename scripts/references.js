@@ -244,14 +244,23 @@
     window.addEventListener("hashchange", focusHashTarget);
   }
 
+  function renderAll(refs) {
+    const refMap = new Map(refs.map((ref) => [ref.id, ref]));
+    applyInlineFootnoteTitles(refMap);
+    renderFootnotes(refMap);
+    renderReferenceLibrary(refs);
+  }
+
+  if (Array.isArray(window.__REFERENCE_DATA__) && window.__REFERENCE_DATA__.length) {
+    renderAll(window.__REFERENCE_DATA__);
+    return;
+  }
+
   fetch(DATA_URL)
     .then((response) => response.text())
     .then((yaml) => {
       const refs = parseSimpleYaml(yaml);
-      const refMap = new Map(refs.map((ref) => [ref.id, ref]));
-      applyInlineFootnoteTitles(refMap);
-      renderFootnotes(refMap);
-      renderReferenceLibrary(refs);
+      renderAll(refs);
     })
     .catch((error) => {
       console.error("Kunde inte läsa referensdata:", error);

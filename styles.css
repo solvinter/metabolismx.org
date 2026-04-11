@@ -12,7 +12,7 @@
   --accent-soft: #edf1ed;
   --shadow: none;
   --radius: 24px;
-  --container: 1120px;
+  --container: 900px;
   --hex-width: 260px;
   --hex-height: 225px;
 }
@@ -23,14 +23,27 @@
 
 html {
   scroll-behavior: smooth;
+  min-height: 100%;
+  background: #e9e4d8;
 }
 
 body {
   margin: 0;
-  background: linear-gradient(180deg, #faf9f6 0%, var(--bg) 100%);
+  min-height: 100%;
+  background: #e9e4d8;
   color: var(--text);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   line-height: 1.6;
+  overflow-x: hidden;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url('noise.png');
+  opacity: 0.03;
+  pointer-events: none;
 }
 
 a {
@@ -63,11 +76,41 @@ a[href] {
 
 .site-brand {
   text-align: center;
-  font-size: 1rem;
-  letter-spacing: 0.04em;
+  font-size: 12px;
+  letter-spacing: 0.18em;
+  font-weight: 500;
+  text-transform: uppercase;
   color: var(--text);
   opacity: 0.9;
   text-decoration: none;
+}
+
+.site-brand-static {
+  cursor: default;
+}
+
+.pilot-return {
+  position: fixed;
+  top: 24px;
+  left: 24px;
+  color: #1c1c1c;
+  text-decoration: none;
+  font-size: 15px;
+  opacity: 0.72;
+  z-index: 2;
+}
+
+.pilot-return:hover,
+.pilot-return:focus {
+  opacity: 1;
+}
+
+.site-brand-large {
+  font-size: 0.85rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  opacity: 0.7;
 }
 
 .hero {
@@ -86,16 +129,23 @@ a[href] {
 }
 
 .hero-card {
-  padding: 3.5rem;
+  padding: 1.5rem;
   border-radius: 28px;
 }
 
 .hero h1,
 .page-header h1 {
   margin: 0;
-  font-size: clamp(2.4rem, 5vw, 4.2rem);
-  line-height: 1.05;
-  letter-spacing: -0.03em;
+  line-height: 1.1;
+}
+
+.hero-card h1 {
+  width: 100%;
+  max-width: 100%;
+  font-size: 2.8rem;
+  line-height: 1.1;
+  letter-spacing: 0.015em;
+  white-space: nowrap;
 }
 
 .hero p,
@@ -116,6 +166,69 @@ a[href] {
   max-width: 38rem;
   font-size: 0.98rem;
 }
+
+.hero-card-intro {
+  width: 100%;
+}
+
+.hero-nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+  width: 100%;
+  margin: 1.2rem 0 1.8rem 0;
+}
+
+.hero-nav a {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  background: rgba(0,0,0,0.04);
+  color: rgba(0,0,0,0.6);
+  border-radius: 999px;
+  padding: 0.35rem 0;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.hero-nav a::after {
+  content: attr(data-hover);
+  display: block;
+  font-size: 0.75rem;
+  color: rgba(0,0,0,0.45);
+  opacity: 0;
+  transform: translateY(-4px);
+  transition: all 0.2s ease;
+}
+
+.hero-nav a:hover,
+.hero-nav a:focus {
+  background: rgba(0,0,0,0.055);
+  color: rgba(0,0,0,0.72);
+}
+
+.hero-nav a:hover::after,
+.hero-nav a:focus::after {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hero-article {
+  width: 100%;
+  column-count: 2;
+  column-gap: 2.5rem;
+}
+
+.hero-article p {
+  margin: 0;
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+  line-height: 1.65;
+}
+
 
 .actions {
   margin-top: 2rem;
@@ -153,6 +266,7 @@ a[href] {
 .section {
   padding: 3rem 0 5rem;
 }
+
 
 .system-page {
   min-height: 100vh;
@@ -221,6 +335,7 @@ a[href] {
 .hex-node {
   fill: var(--surface);
   color: var(--text);
+  filter: drop-shadow(0 6px 12px rgba(0,0,0,0.15));
 }
 
 .hex-node use {
@@ -586,46 +701,26 @@ a[href] {
   color: var(--text-muted);
 }
 
-.site-footer,
-.footer {
-  margin-top: 5rem;
-  padding: 2rem 0 3rem;
-}
+@media (max-width: 768px) {
+  .hero-card h1 {
+    white-space: normal;
+  }
 
-.site-footer .container,
-.footer .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 1.5rem;
-}
+  .hero-article {
+    column-count: 1;
+  }
 
-.site-imprint,
-.footer-left {
-  text-align: left;
-  font-size: 0.85rem;
-  color: var(--text-muted);
-  opacity: 0.55;
-}
+  .hero-article p {
+    text-align: left;
+  }
 
-.footer-right {
-  margin-left: auto;
-}
+  .hero-nav {
+    grid-template-columns: 1fr;
+  }
 
-.footer-link,
-.footer-link:any-link,
-.footer-link:visited,
-.footer-link:hover,
-.footer-link:focus,
-.footer-link:active {
-  color: rgba(34, 50, 56, 0.68);
-  text-decoration: none;
-  font-size: 0.9rem;
-}
-
-.footer-link:hover,
-.footer-link:focus {
-  color: rgba(34, 50, 56, 0.84);
+  .hero-nav a::after {
+    display: none;
+  }
 }
 
 @media (max-width: 720px) {
@@ -658,8 +753,4 @@ a[href] {
     font-size: 10px;
   }
 
-  .site-footer .container,
-  .footer .container {
-    align-items: flex-start;
-  }
 }
