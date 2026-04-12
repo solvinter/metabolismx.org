@@ -3,7 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Metabolism X</title>
+<title>Hälsoundersökning – hjärt- och kärlsjukdom | Metabolism X</title>
+<meta name="description" content="Hälsoundersökning med fokus på riskfaktorer för hjärt- och kärlsjukdom och tidiga metabola markörer.">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap" rel="stylesheet">
 
 <style>
@@ -46,6 +47,7 @@ body::before {
     inset 0 -10px 24px rgba(255,255,255,0.08);
   backdrop-filter: blur(12px) saturate(1.05);
   -webkit-backdrop-filter: blur(12px) saturate(1.05);
+  position: relative;
 }
 
 .card h1 {
@@ -64,13 +66,13 @@ body::before {
 
 .cta-text {
   text-align: center;
-  margin: 80px 0;
+  margin: 48px 0 40px;
 }
 
 .cta-text a {
   text-decoration: none;
   color: #1c1c1c;
-  font-size: 14px;
+  font-size: 17px;
   letter-spacing: 0.12em;
   border-bottom: 1px solid rgba(0,0,0,0.2);
   padding-bottom: 2px;
@@ -83,9 +85,9 @@ body::before {
 }
 
 .meta-link {
-  position: fixed;
-  right: 56px;
-  bottom: 22vh;
+  position: absolute;
+  right: 28px;
+  bottom: 24px;
   text-align: right;
   z-index: 1;
 }
@@ -106,9 +108,10 @@ body::before {
 
 .meta-read {
   font-size: 12px;
-  margin-top: 4px;
+  margin-bottom: 4px;
   opacity: 0.7;
   letter-spacing: 0.08em;
+  order: -1;
 }
 
 .meta-link a:hover .meta-read {
@@ -128,20 +131,7 @@ body::before {
 
   .meta-link {
     right: 28px;
-    bottom: 16vh;
-  }
-
-  .meta-link .meta-title,
-  .meta-link .meta-read {
-    text-shadow: 0 1px 0 rgba(255,255,255,0.18);
-  }
-
-  .card {
-    max-width: 100%;
-  }
-
-  .meta-link {
-    right: 28px;
+    bottom: 24px;
   }
 }
 
@@ -153,23 +143,19 @@ body::before {
     <h1>vitalitet — genom hela livet</h1>
 
     <p>
-    Ett initiativ för att förstå och följa riskfaktorer för åldersrelaterad sjukdom tidigare.
-    </p>
-
-    <p>
-    Härifrån kan du läsa mer om piloten och om tankarna bakom.
+    En hälsoundersökning för att förstå och följa riskfaktorer för åldersrelaterad sjukdom tidigare.
     </p>
 
     <div class="cta-text">
-      <a href="pilot/index.html">Vidare till piloten</a>
+      <a href="halsoundersokning-hjart-karl/index.html">Fortsätt</a>
     </div>
-  </div>
 
-  <div class="meta-link">
-    <a href="risk/index.html">
-      <span class="meta-title">METABOLISM X</span>
-      <span class="meta-read">Läs mer →</span>
-    </a>
+    <div class="meta-link">
+      <a href="risk/index.html">
+        <span class="meta-title">METABOLISM X</span>
+        <span class="meta-read">Läs mer →</span>
+      </a>
+    </div>
   </div>
 
 </body>
