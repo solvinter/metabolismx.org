@@ -84,6 +84,34 @@
     });
   }
 
+  function setInlineFootnoteNumber(link, number) {
+    const label = String(number);
+    const inlineSup = link.querySelector("sup");
+    if (inlineSup) {
+      inlineSup.textContent = label;
+      return;
+    }
+
+    if (link.parentElement && link.parentElement.tagName === "SUP") {
+      link.textContent = label;
+      return;
+    }
+
+    link.innerHTML = `<sup>${escapeHtml(label)}</sup>`;
+  }
+
+  function syncInlineSectionNumbers(section) {
+    const refNumbers = new Map(section.refs.map((id, idx) => [id, idx + 1]));
+
+    section.nodes.forEach((node) => {
+      node.querySelectorAll("a[data-ref]").forEach((link) => {
+        const number = refNumbers.get(link.dataset.ref);
+        if (!number) return;
+        setInlineFootnoteNumber(link, number);
+      });
+    });
+  }
+
   function renderFootnotes(refMap) {
     if (document.body.dataset.referencesMode === "library") return;
 
@@ -122,6 +150,8 @@
 
     sections.forEach((section) => {
       if (!section.refs.length) return;
+
+      syncInlineSectionNumbers(section);
 
       const aside = document.createElement("aside");
       aside.className = "section-footnotes";
