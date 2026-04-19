@@ -673,13 +673,13 @@ references:
 
   - id: "ref_longevity_mtor_review_2024"
     type: "review"
-    title: "mTOR signalling and aging"
+    title: "mTOR at the nexus of nutrition, growth, ageing and disease"
     short: "mTOR framstår i nyare översikter som en central nod mellan näring, tillväxt och åldrande."
     summary: "Nyare översikter placerar mTOR i centrum för hur celler växlar mellan tillväxt, underhåll och stressrespons."
     authors: "Liu GY; Sabatini DM"
     journal: "Nature Reviews Molecular Cell Biology"
-    year: "2024"
-    doi: ""
+    year: "2020"
+    doi: "10.1038/s41580-019-0199-y"
     category: "Longevity"
     abstract: "mTOR är central i longevitydiskussionen därför att signalvägen kopplar samman energitillgång, proteinsyntes, återvinning och tillväxt. När mTOR diskuteras i åldrande handlar det därför inte om en enda molekylär detalj, utan om en nod som hjälper till att förklara hur celler prioriterar mellan expansion och reparation. För Longevity-avsnittet ger detta ett mer mekanistiskt språk för varför vissa interventioner blivit så intressanta."
 
