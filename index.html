@@ -18,6 +18,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 28px;
 }
 
 body::before {
@@ -36,9 +37,8 @@ body::before {
     rgba(255,255,255,0.42),
     rgba(255,255,255,0.22)
   );
-  padding: 40px;
-  max-width: 560px;
-  text-align: center;
+  padding: 42px 44px;
+  max-width: 660px;
   z-index: 1;
   border: 1px solid rgba(255,255,255,0.42);
   box-shadow:
@@ -53,69 +53,86 @@ body::before {
 .card h1 {
   font-family: 'Cormorant Garamond', serif;
   font-size: 28px;
-  margin-bottom: 20px;
+  margin: 0 0 24px;
   letter-spacing: 0.05em;
+  text-align: center;
 }
 
-.card p {
+.copy p,
+.copy li,
+.copy-note {
   font-size: 16px;
-  line-height: 1.7;
-  margin-bottom: 22px;
+  line-height: 1.72;
   color: #333;
 }
 
-.cta-text {
-  text-align: center;
-  margin: 48px 0 40px;
+.copy p {
+  margin: 0 0 18px;
 }
 
-.cta-text a {
+.copy-list {
+  list-style: disc;
+  padding-left: 22px;
+  margin: 0 0 18px;
+}
+
+.copy-list li {
+  margin: 0 0 14px;
+}
+
+.copy-break {
+  width: 100%;
+  height: 1px;
+  margin: 22px 0;
+  background: rgba(0,0,0,0.08);
+  border: 0;
+}
+
+.copy-note {
+  margin: 0;
+}
+
+.pathways {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  margin-top: 36px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(0,0,0,0.08);
+}
+
+.pathway {
+  min-width: 0;
+}
+
+.pathway-label {
+  margin: 0 0 10px;
+  font-size: 13px;
+  line-height: 1.55;
+  color: rgba(28,28,28,0.68);
+  letter-spacing: 0.03em;
+}
+
+.pathway-text {
+  margin: 0 0 16px;
+  font-size: 15px;
+  line-height: 1.72;
+  color: #333;
+}
+
+.pathway a {
   text-decoration: none;
   color: #1c1c1c;
-  font-size: 17px;
-  letter-spacing: 0.12em;
+  font-size: 15px;
+  letter-spacing: 0.08em;
   border-bottom: 1px solid rgba(0,0,0,0.2);
   padding-bottom: 2px;
   transition: all 0.2s ease;
 }
 
-.cta-text a:hover {
+.pathway a:hover {
   opacity: 0.7;
-  border-bottom: 1px solid rgba(0,0,0,0.4);
-}
-
-.meta-link {
-  position: absolute;
-  right: 28px;
-  bottom: 24px;
-  text-align: right;
-  z-index: 1;
-}
-
-.meta-link a {
-  text-decoration: none;
-  color: #1c1c1c;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-}
-
-.meta-title {
-  font-size: 12px;
-  letter-spacing: 0.18em;
-  font-weight: 500;
-}
-
-.meta-read {
-  font-size: 12px;
-  margin-bottom: 4px;
-  opacity: 0.7;
-  letter-spacing: 0.08em;
-  order: -1;
-}
-
-.meta-link a:hover .meta-read {
-  opacity: 1;
+  border-bottom-color: rgba(0,0,0,0.4);
 }
 
 @media (max-width: 768px) {
@@ -127,11 +144,12 @@ body::before {
 
   .card {
     max-width: 100%;
+    padding: 34px 28px;
   }
 
-  .meta-link {
-    right: 28px;
-    bottom: 24px;
+  .pathways {
+    grid-template-columns: 1fr;
+    gap: 22px;
   }
 }
 
@@ -140,21 +158,59 @@ body::before {
 
 <body>
   <div class="card">
-    <h1>vitalitet — genom hela livet</h1>
+    <h1>MetabolismX</h1>
 
-    <p>
-    En hälsoundersökning för att förstå och följa riskfaktorer för åldersrelaterad sjukdom tidigare.
-    </p>
+    <div class="copy">
+      <p>
+        MetabolismX är ett initiativ inom förebyggande medicin med fokus på att förstå och identifiera risk i tid.
+      </p>
 
-    <div class="cta-text">
-      <a href="halsoundersokning-hjart-karl/index.html">Fortsätt</a>
+      <p>
+        I klinisk vardag upptäcks många av de vanligaste riskfaktorerna för sjukdom sent, trots att de ofta kan identifieras tidigare.
+      </p>
+
+      <div class="copy-break"></div>
+
+      <p>
+        Detta gäller särskilt metabola förändringar som över tid påverkar kroppens utveckling.
+      </p>
+
+      <ul class="copy-list">
+        <li>Förändringar i kroppen sker ofta långt innan symtom uppstår</li>
+        <li>Sjukdomar som drabbar hjärtat utvecklas successivt med en gradvis försämring av hjärtats förmåga</li>
+        <li>Även hjärnan förändras över tid med en långsam förlust av kognitiv kapacitet</li>
+      </ul>
+
+      <div class="copy-break"></div>
+
+      <p>
+        Syftet med MetabolismX är att göra denna typ av kunskap mer tillgänglig i praktiken.
+      </p>
+
+      <ul class="copy-list">
+        <li>Tidiga signaler kan identifieras genom ett begränsat antal analyser</li>
+        <li>Det skapar möjlighet att förstå och påverka utvecklingen i din kropp innan sjukdom uppstår</li>
+      </ul>
+
+      <div class="copy-break"></div>
+
+      <p class="copy-note">
+        Detta arbete utgår från ett bredare perspektiv på hälsa, där vitalitet är beroende av – och därför kan moduleras genom – biologi, metabolism och åldrande.
+      </p>
     </div>
 
-    <div class="meta-link">
-      <a href="risk/index.html">
-        <span class="meta-title">METABOLISM X</span>
-        <span class="meta-read">Läs mer →</span>
-      </a>
+    <div class="pathways">
+      <div class="pathway">
+        <p class="pathway-label">För dig som vill förstå mer</p>
+        <p class="pathway-text">Texter om bakgrund, perspektiv och resonemang kring hur hälsa och åldrande kan förstås tidigare.</p>
+        <a href="risk/index.html">Läs mer</a>
+      </div>
+
+      <div class="pathway">
+        <p class="pathway-label">För dig som vill gå vidare</p>
+        <p class="pathway-text">En mindre pilot pågår där ett begränsat antal personer erbjuds riktad provtagning och analys.</p>
+        <a href="p/index.html">Läs mer om pilot</a>
+      </div>
     </div>
   </div>
 
