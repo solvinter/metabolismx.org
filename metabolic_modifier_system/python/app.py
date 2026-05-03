@@ -4,6 +4,9 @@ from pathlib import Path
 import pandas as pd
 import streamlit as st
 
+from metabolic_modifier_system.laboratory_results_views.classic_lab_view import render_classic_lab_view
+from metabolic_modifier_system.laboratory_results_views.metabolismx_lab_view import render_metabolismx_lab_view
+
 CURRENT_DIR = Path(__file__).resolve().parent
 SRC_DIR = CURRENT_DIR / "src"
 sys.path.insert(0, str(SRC_DIR))
@@ -58,7 +61,21 @@ def row(marker, value, unit="", level=None):
 def show_table(title, rows):
     st.subheader(title)
     df = pd.DataFrame(rows)
-    st.dataframe(df, use_container_width=True, hide_index=True)
+    display_dataframe(df, hide_index=True)
+
+
+def display_dataframe(df: pd.DataFrame, *, hide_index: bool = True, **kwargs):
+    """Render a dataframe trying width="stretch" first, falling back to use_container_width.
+
+    Some Streamlit versions don't accept width="stretch"; to respect your request we try it
+    and gracefully fall back to the previous behavior.
+    """
+    try:
+        # Try the user-requested style first
+        st.dataframe(df, width="stretch", hide_index=hide_index, **kwargs)
+    except TypeError:
+        # Fallback to the previous supported API
+        st.dataframe(df, use_container_width=True, hide_index=hide_index, **kwargs)
 
 
 st.set_page_config(page_title="MetabolismX Lab Explorer", layout="wide")
@@ -123,64 +140,50 @@ levels = {
 
 st.header(f"Expanded lab list: {patient['name']}")
 
-show_table(
-    "BODY / ADIPOSITY",
-    [
-        row("Height", f"{patient['height_cm']:.0f}", "cm"),
-        row("Weight", f"{patient['weight_kg']:.1f}", "kg"),
-        row("Waist circumference", f"{patient['waist_cm']:.0f}", "cm", levels["waist"]),
-        row("BMI", f"{results['bmi']:.2f}", "kg/m²", levels["bmi"]),
-        row("Waist/height ratio", f"{results['waist_height_ratio']:.2f}", "ratio", levels["waist_height"]),
-    ],
-)
-
-show_table(
-    "GLUCOSE–INSULIN AXIS",
-    [
-        row("Fasting glucose", f"{patient['fasting_glucose']:.2f}", "mmol/L", levels["fasting_glucose"]),
-        row("Fasting insulin", f"{patient['fasting_insulin']:.2f}", "mIU/L", levels["fasting_insulin"]),
-        row("C-peptide", f"{patient['c_peptide']:.2f}", "nmol/L", levels["c_peptide"]),
-        row("HbA1c", f"{patient['hba1c']:.0f}", "mmol/mol", levels["hba1c"]),
-        row("Estimated average glucose", f"{results['eAG']:.2f}", "mmol/L"),
-        row("HOMA-IR", f"{results['homa_ir']:.2f}", "index", levels["homa_ir"]),
-        row("QUICKI", f"{results['quicki']:.3f}", "index", levels["quicki"]),
-        row("TyG index", f"{results['tyg_index']:.2f}", "index", levels["tyg"]),
-        row("TyG-BMI", f"{results['tyg_bmi']:.2f}", "index"),
-        row("TyG-waist", f"{results['tyg_waist']:.2f}", "index"),
-        row("Insulin/glucose ratio", f"{results['insulin_glucose_ratio']:.2f}", "ratio"),
-        row("C-peptide/glucose ratio", f"{results['c_peptide_glucose_ratio']:.3f}", "ratio"),
-        row("Insulin/C-peptide ratio", f"{results['insulin_c_peptide_ratio']:.2f}", "ratio"),
-    ],
-)
-
-show_table(
-    "LIPID / ATHEROGENIC AXIS",
-    [
-        row("Total cholesterol", f"{patient['total_cholesterol']:.2f}", "mmol/L", levels["total_cholesterol"]),
-        row("LDL cholesterol", f"{patient['ldl']:.2f}", "mmol/L", levels["ldl"]),
-        row("HDL cholesterol", f"{patient['hdl']:.2f}", "mmol/L", levels["hdl"]),
-        row("Triglycerides", f"{patient['triglycerides']:.2f}", "mmol/L", levels["triglycerides"]),
-        row("Non-HDL cholesterol", f"{results['non_hdl']:.2f}", "mmol/L", levels["non_hdl"]),
-        row("Remnant cholesterol", f"{results['remnant']:.2f}", "mmol/L", levels["remnant"]),
-        row("TG/HDL ratio", f"{results['tg_hdl_ratio']:.2f}", "ratio", levels["tg_hdl"]),
-        row("Total/HDL ratio", f"{results['total_hdl_ratio']:.2f}", "ratio", levels["total_hdl"]),
-        row("LDL/HDL ratio", f"{results['ldl_hdl_ratio']:.2f}", "ratio", levels["ldl_hdl"]),
-    ],
-)
-
-show_table(
-    "BLOOD PRESSURE / HEMODYNAMICS",
-    [
-        row("Blood pressure", f"{patient['systolic_bp']:.0f}/{patient['diastolic_bp']:.0f}", "mmHg", levels["blood_pressure"]),
-        row("Pulse pressure", f"{results['pulse_pressure']:.0f}", "mmHg", levels["pulse_pressure"]),
-        row("Mean arterial pressure", f"{results['map']:.1f}", "mmHg", levels["map"]),
-    ],
-)
-
+# Compute shared summaries once so each view can use them.
 met_syn = calculate_metabolic_syndrome_components(patient, results)
 burden = calculate_metabolic_burden_score(patient, results)
 ir_summary = summarise_insulin_resistance_pattern(patient, results)
 athero_summary = summarise_atherogenic_dyslipidaemia(patient, results)
+
+# Pack summaries into a single dict passed to each renderer.
+summaries = {
+    "metabolic_syndrome": met_syn,
+    "burden": burden,
+    "insulin_resistance": ir_summary,
+    "atherogenic_dyslipidaemia": athero_summary,
+}
+
+# Provide multiple views via tabs. The render functions are imported at top of the file.
+tab1, tab2, tab3, tab4 = st.tabs([
+    "Klassisk labb",
+    "MetabolismX",
+    "SCORE2",
+    "Modifierad SCORE",
+])
+
+with tab1:
+    # Classic lab view should accept unified signature and may return a DataFrame.
+    try:
+        df = render_classic_lab_view(patient, results, levels=levels, summaries=summaries)
+        if df is not None:
+            display_dataframe(df, hide_index=True)
+    except Exception as e:
+        st.error(f"Error rendering classic lab view: {e}")
+
+with tab2:
+    try:
+        df = render_metabolismx_lab_view(patient, results, levels=levels, summaries=summaries)
+        if df is not None:
+            display_dataframe(df, hide_index=True)
+    except Exception as e:
+        st.error(f"Error rendering MetabolismX view: {e}")
+
+with tab3:
+    st.write("SCORE2 pending")
+
+with tab4:
+    st.write("MetabolismX modifier pending")
 
 st.subheader("METABOLISM X SUMMARY")
 summary_df = pd.DataFrame(
@@ -192,7 +195,7 @@ summary_df = pd.DataFrame(
         {"Summary": "Atherogenic dyslipidaemia pattern", "Result": athero_summary["summary"]},
     ]
 )
-st.dataframe(summary_df, use_container_width=True, hide_index=True)
+display_dataframe(summary_df, hide_index=True)
 
 with st.expander("Raw results dictionary"):
     st.json(results)

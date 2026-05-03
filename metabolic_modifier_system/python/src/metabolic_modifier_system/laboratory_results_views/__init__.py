@@ -1,0 +1,3 @@
+# package init for laboratory_results_views
+from .classic_lab_view import render_classic_lab_view
+from .metabolismx_lab_view import render_metabolismx_lab_view
