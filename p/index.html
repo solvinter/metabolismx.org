@@ -11,18 +11,24 @@
 <meta property="og:description" content="En mindre pilot inom MetabolismX för tidig identifiering av metabola riskfaktorer och biologisk ålder.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://metabolismx.org/p/">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&display=swap" rel="stylesheet">
 <style>
-
+:root {
+  --ink: #1f2426;
+  --muted: rgba(31,36,38,0.78);
+  --line: rgba(31,36,38,0.10);
+  --surface: rgba(255,255,255,0.38);
+  --surface-2: rgba(255,255,255,0.30);
+  --shadow: 0 24px 60px rgba(0,0,0,0.10);
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
 body {
-  margin: 0;
-  background: url('../ljus_vagg_3.jpeg') center/cover no-repeat;
   min-height: 100vh;
   font-family: system-ui, -apple-system, sans-serif;
-  color: #1c1c1c;
+  color: var(--ink);
+  background: #e9e4d8 url('../ljus_vagg_3.jpeg') center/cover no-repeat fixed;
 }
-
 body::before {
   content: "";
   position: fixed;
@@ -32,230 +38,190 @@ body::before {
     linear-gradient(to bottom, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
   pointer-events: none;
 }
-
-.back-link {
-  position: fixed;
-  top: 24px;
-  left: 24px;
-  color: #1c1c1c;
-  text-decoration: none;
-  font-size: 15px;
-  opacity: 0.72;
-  z-index: 2;
-}
-
 .page {
-  max-width: 660px;
-  margin: 0 auto;
-  padding: 96px 28px 88px;
   position: relative;
   z-index: 1;
+  width: min(100% - 32px, 1080px);
+  margin: 0 auto;
+  padding: 34px 0 56px;
 }
-
-h1,
-h2 {
-  font-weight: 500;
-  color: #1c1c1c;
+.back-link {
+  display: inline-block;
+  margin: 0 0 22px;
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+  color: rgba(31,36,38,0.76);
+  border-bottom: 1px solid rgba(31,36,38,0.18);
+  padding-bottom: 2px;
 }
-
-h1 {
+.panel {
+  background: linear-gradient(180deg, rgba(255,255,255,0.52), rgba(255,255,255,0.28));
+  border: 1px solid rgba(255,255,255,0.42);
+  box-shadow: var(--shadow), inset 0 1px 0 rgba(255,255,255,0.34);
+  backdrop-filter: blur(12px) saturate(1.04);
+  -webkit-backdrop-filter: blur(12px) saturate(1.04);
+  padding: 42px 42px 38px;
+}
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(260px, 0.8fr);
+  gap: 30px;
+  align-items: start;
+}
+.hero-copy h1 {
+  margin: 0 0 16px;
   font-family: 'Cormorant Garamond', serif;
-  font-size: 32px;
-  margin: 0 0 40px;
+  font-size: clamp(2rem, 3.4vw, 3.5rem);
+  line-height: 1.02;
+  font-weight: 500;
 }
-
-h2 {
-  font-size: 20px;
-  margin: 0 0 12px;
+.kicker {
+  margin: 0 0 22px;
+  font-size: 12px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(31,36,38,0.58);
 }
-
-.section {
-  margin: 64px 0;
-}
-
-.section:first-of-type {
-  margin-top: 0;
-}
-
-.separator {
-  width: 100%;
-  height: 1px;
-  margin: 32px 0;
-  background: rgba(0,0,0,0.08);
-  border: 0;
-}
-
-p,
-li {
-  line-height: 1.8;
+.hero-copy p,
+.section p,
+.section li,
+.hero-meta p,
+.cta-note {
   font-size: 16px;
-  color: #1c1c1c;
+  line-height: 1.8;
+  color: var(--muted);
 }
-
-p {
-  margin: 0 0 18px;
+.hero-copy p,
+.section p { margin: 0 0 16px; }
+.hero-meta {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  padding: 18px 18px 14px;
 }
-
-ul {
+.hero-meta h2 {
+  margin: 0 0 10px;
+  font-size: 1rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.sections {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px 24px;
+  margin-top: 28px;
+}
+.section {
+  background: var(--surface-2);
+  border: 1px solid var(--line);
+  padding: 20px 20px 18px;
+}
+.section h2 {
+  margin: 0 0 12px;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.08;
+}
+.section ul {
   list-style: disc;
   padding-left: 22px;
-  margin: 0 0 18px;
-}
-
-li {
   margin: 0 0 16px;
 }
-
+.section li { margin: 0 0 10px; }
 .cta-section {
-  margin-top: 72px;
-  padding-top: 28px;
-  border-top: 1px solid rgba(0,0,0,0.08);
+  margin-top: 28px;
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
 }
-
-.cta-text {
-  text-align: left;
-  margin: 28px 0 18px;
+.cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: center;
 }
-
-.cta-text a {
-  text-decoration: none;
-  color: #1c1c1c;
+.cta-link {
   display: inline-flex;
   align-items: center;
-  justify-content: center;
   min-height: 48px;
   padding: 0 22px;
-  font-size: 18px;
-  letter-spacing: 0.12em;
-  border: 1px solid rgba(0,0,0,0.18);
-  background: rgba(255,255,255,0.24);
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
-  transition: all 0.2s ease;
+  font-size: 16px;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  color: var(--ink);
+  background: rgba(255,255,255,0.36);
+  border: 1px solid rgba(31,36,38,0.18);
 }
-
-.cta-text a:hover {
-  opacity: 0.72;
-  border-color: rgba(0,0,0,0.3);
-  background: rgba(255,255,255,0.3);
+.cta-note { max-width: 560px; margin: 0; }
+@media (max-width: 900px) {
+  .page { width: min(100% - 24px, 760px); }
+  .panel { padding: 30px 24px 28px; }
+  .hero, .sections { grid-template-columns: 1fr; }
 }
-
-.cta-note {
-  max-width: 520px;
-  font-size: 15px;
-  line-height: 1.78;
-  color: rgba(28,28,28,0.84);
+@media (max-width: 640px) {
+  body { background-attachment: scroll; }
+  .cta-row { align-items: flex-start; }
 }
-
-@media (max-width: 768px) {
-  body {
-    background-position: center;
-    background-size: cover;
-  }
-
-  .page {
-    padding: 88px 20px 64px;
-  }
-
-  .section {
-    margin: 52px 0;
-  }
-}
-
 </style>
 </head>
-
 <body>
-  <a class="back-link" href="../index.html">← Tillbaka</a>
-
   <main class="page">
-    <h1>Pilot – MetabolismX</h1>
-
-    <div class="section">
-      <p>
-        Detta är en mindre pilot inom MetabolismX och genomförs i begränsad omfattning.
-      </p>
-
-      <p>
-        Du har fått tillgång till denna sida som en del av en mindre pilotgrupp.
-      </p>
-    </div>
-
-    <div class="separator"></div>
-
-    <div class="section">
-      <h2>Syfte</h2>
-
-      <p>
-        Att undersöka hur metabola riskfaktorer kan identifieras tidigt och göras mer tillgängliga i praktiken.
-      </p>
-    </div>
-
-    <div class="separator"></div>
-
-    <div class="section">
-      <h2>Detta ingår</h2>
-
-      <p>
-        Som deltagare erbjuds du en riktad provtagning för att identifiera tidiga förändringar i kroppen.
-      </p>
-
-      <ul>
-        <li>Riktad provtagning med fokus på riskfaktorer kopplade till hjärt- och kärlsjukdom</li>
-        <li>En övergripande bild av din metabola hälsa</li>
-        <li>En utökad analys av biologisk ålder</li>
-      </ul>
-
-      <p>
-        Resultaten sammanställs i ett medicinskt utlåtande med rekommendationer.
-      </p>
-
-      <p>
-        Vid behov föreslås vidare uppföljning inom vården.
-      </p>
-    </div>
-
-    <div class="separator"></div>
-
-    <div class="section">
-      <h2>Hur det går till</h2>
-
-      <p>
-        Efter anmälan får du en remiss för provtagning.
-      </p>
-
-      <p>
-        Proverna kan lämnas på din vårdcentral eller vid Sahlgrenska universitetssjukhuset.
-      </p>
-
-      <ul>
-        <li>Proverna analyseras därefter av läkare</li>
-        <li>En medicinsk bedömning med rekommendationer lämnas skriftligt</li>
-        <li>Vid behov bifogas en remiss till vårdcentral för vidare uppföljning</li>
-      </ul>
-    </div>
-
-    <div class="separator"></div>
-
-    <div class="section">
-      <h2>Deltagande</h2>
-
-      <p>
-        Deltagande sker utan kostnad inom ramen för piloten.
-      </p>
-    </div>
-
-    <div class="cta-section">
-      <h2>För dig som vill delta</h2>
-
-      <div class="cta-text">
-        <a href="mailto:metabolismx@protonmail.com?subject=Pilot%20%E2%80%93%20MetabolismX&body=Jag%20skulle%20g%C3%A4rna%20delta%20i%20piloten.">Delta i pilot</a>
+    <a class="back-link" href="/">← Tillbaka till MetabolismX</a>
+    <section class="panel">
+      <div class="hero">
+        <div class="hero-copy">
+          <p class="kicker">Begränsad pilot</p>
+          <h1>Pilot – MetabolismX</h1>
+          <p>Detta är en mindre pilot inom MetabolismX och genomförs i begränsad omfattning.</p>
+          <p>Du har fått tillgång till denna sida som en del av en mindre pilotgrupp.</p>
+        </div>
+        <aside class="hero-meta">
+          <h2>Omfattning</h2>
+          <p>Deltagande sker utan kostnad inom ramen för piloten.</p>
+          <p>Piloten är avgränsad, forskningsnära och avsedd för ett mindre antal deltagare.</p>
+        </aside>
       </div>
 
-      <p class="cta-note">
-        Du anmäler ditt intresse via e-post. Lämna inga känsliga personuppgifter i första mejlet. Nästa steg är att underlag för provtagning skickas hem till dig med post.
-      </p>
-    </div>
+      <div class="sections">
+        <section class="section">
+          <h2>Syfte</h2>
+          <p>Att undersöka hur metabola riskfaktorer kan identifieras tidigt och göras mer tillgängliga i praktiken.</p>
+        </section>
+
+        <section class="section">
+          <h2>Detta ingår</h2>
+          <p>Som deltagare erbjuds du en riktad provtagning för att identifiera tidiga förändringar i kroppen.</p>
+          <ul>
+            <li>Riktad provtagning med fokus på riskfaktorer kopplade till hjärt- och kärlsjukdom</li>
+            <li>En övergripande bild av din metabola hälsa</li>
+            <li>En utökad analys av biologisk ålder</li>
+          </ul>
+          <p>Resultaten sammanställs i ett medicinskt utlåtande med rekommendationer.</p>
+          <p>Vid behov föreslås vidare uppföljning inom vården.</p>
+        </section>
+
+        <section class="section">
+          <h2>Hur det går till</h2>
+          <p>Efter anmälan får du en remiss för provtagning.</p>
+          <p>Proverna kan lämnas på din vårdcentral eller vid Sahlgrenska universitetssjukhuset.</p>
+          <ul>
+            <li>Proverna analyseras därefter av läkare</li>
+            <li>En medicinsk bedömning med rekommendationer lämnas skriftligt</li>
+            <li>Vid behov bifogas en remiss till vårdcentral för vidare uppföljning</li>
+          </ul>
+        </section>
+
+        <section class="section">
+          <h2>För dig som vill delta</h2>
+          <p>Detta spår är separat från tidig lansering och avsett för en mindre grupp deltagare inom pilotformatet.</p>
+          <div class="cta-row">
+            <a class="cta-link" href="mailto:metabolismx@protonmail.com?subject=Pilot%20%E2%80%93%20MetabolismX&body=Jag%20skulle%20g%C3%A4rna%20delta%20i%20piloten.">Delta i pilot</a>
+          </div>
+          <p class="cta-note">Du anmäler ditt intresse via e-post. Lämna inga känsliga personuppgifter i första mejlet. Nästa steg är att underlag för provtagning skickas hem till dig med post.</p>
+        </section>
+      </div>
+    </section>
   </main>
 </body>
 </html>
