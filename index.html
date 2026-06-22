@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>MetabolismX | Förebyggande medicin och tidig riskförståelse</title>
-<meta name="description" content="MetabolismX är ett initiativ inom förebyggande medicin med fokus på att förstå och identifiera risk i tid, med vägar vidare till bakgrund, pilot och tidig lansering.">
+<meta name="description" content="MetabolismX är ett initiativ inom förebyggande medicin med fokus på att förstå och identifiera risk i tid, med vägar vidare till bakgrund och tidig lansering.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://metabolismx.org/">
 <meta property="og:title" content="MetabolismX | Förebyggande medicin och tidig riskförståelse">
@@ -23,14 +23,17 @@
   --line-strong: rgba(31,36,38,0.16);
   --shadow: 0 24px 60px rgba(0,0,0,0.10);
 }
+
 * { box-sizing: border-box; }
 html, body { margin: 0; padding: 0; }
+
 body {
   min-height: 100vh;
   font-family: system-ui, -apple-system, sans-serif;
   color: var(--ink);
   background: #e9e4d8 url('ljus_vagg_3.jpeg') center/cover no-repeat fixed;
 }
+
 body::before {
   content: "";
   position: fixed;
@@ -40,6 +43,7 @@ body::before {
     linear-gradient(to bottom, rgba(255,255,255,0.08), rgba(255,255,255,0.02));
   pointer-events: none;
 }
+
 .page {
   position: relative;
   z-index: 1;
@@ -47,6 +51,7 @@ body::before {
   margin: 0 auto;
   padding: 44px 0 56px;
 }
+
 .site-mark {
   margin: 0 0 56px;
   font-size: 12px;
@@ -54,6 +59,7 @@ body::before {
   text-transform: uppercase;
   color: rgba(31,36,38,0.76);
 }
+
 .hero-card {
   background: linear-gradient(180deg, var(--paper-strong), var(--paper-soft));
   border: 1px solid rgba(255,255,255,0.42);
@@ -62,12 +68,14 @@ body::before {
   -webkit-backdrop-filter: blur(12px) saturate(1.04);
   padding: 56px 56px 46px;
 }
+
 .hero-grid {
   display: grid;
   grid-template-columns: minmax(0, 1.3fr) minmax(290px, 0.9fr);
   gap: 44px;
   align-items: start;
 }
+
 .hero-copy h1 {
   margin: 0 0 22px;
   font-family: 'Cormorant Garamond', serif;
@@ -76,6 +84,7 @@ body::before {
   letter-spacing: 0.02em;
   font-weight: 500;
 }
+
 .hero-lead,
 .hero-copy p,
 .hero-copy li,
@@ -86,33 +95,41 @@ body::before {
   line-height: 1.8;
   color: var(--muted);
 }
+
 .hero-lead {
   margin: 0 0 18px;
   color: rgba(31,36,38,0.82);
 }
+
 .copy-break {
   width: 100%;
   height: 1px;
   background: var(--line);
   margin: 22px 0;
 }
+
 .hero-copy p {
   margin: 0 0 18px;
 }
+
 .hero-copy ul {
   margin: 0 0 18px;
   padding-left: 22px;
 }
+
 .hero-copy li {
   margin: 0 0 12px;
 }
+
 .hero-note {
   margin: 0;
 }
+
 .hero-actions {
   display: grid;
   gap: 18px;
 }
+
 .hero-actions-label {
   margin: 0 0 4px;
   font-size: 12px;
@@ -120,11 +137,13 @@ body::before {
   text-transform: uppercase;
   color: rgba(31,36,38,0.56);
 }
+
 .path-card {
   background: rgba(255,255,255,0.34);
   border: 1px solid var(--line);
   padding: 22px 22px 20px;
 }
+
 .path-card h2 {
   margin: 0 0 10px;
   font-family: 'Cormorant Garamond', serif;
@@ -132,9 +151,11 @@ body::before {
   font-weight: 500;
   line-height: 1.08;
 }
+
 .path-card p {
   margin: 0 0 14px;
 }
+
 .path-card a {
   display: inline-block;
   font-size: 14px;
@@ -144,25 +165,53 @@ body::before {
   padding-bottom: 2px;
   text-decoration: none;
 }
+
 .path-card a:hover,
-.path-card a:focus { border-bottom-color: rgba(31,36,38,0.44); }
+.path-card a:focus {
+  border-bottom-color: rgba(31,36,38,0.44);
+}
+
 .path-card.is-primary {
   background: rgba(255,255,255,0.42);
   border-color: var(--line-strong);
 }
+
 @media (max-width: 900px) {
-  .page { width: min(100% - 24px, 760px); padding-top: 28px; }
-  .site-mark { margin-bottom: 28px; }
-  .hero-card { padding: 36px 28px 32px; }
-  .hero-grid { grid-template-columns: 1fr; gap: 30px; }
+  .page {
+    width: min(100% - 24px, 760px);
+    padding-top: 28px;
+  }
+
+  .site-mark {
+    margin-bottom: 28px;
+  }
+
+  .hero-card {
+    padding: 36px 28px 32px;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
 }
+
 @media (max-width: 640px) {
-  body { background-attachment: scroll; }
-  .hero-copy h1 { line-height: 1.02; }
-  .path-card { padding: 18px 18px 16px; }
+  body {
+    background-attachment: scroll;
+  }
+
+  .hero-copy h1 {
+    line-height: 1.02;
+  }
+
+  .path-card {
+    padding: 18px 18px 16px;
+  }
 }
 </style>
 </head>
+
 <body>
   <main class="page">
     <p class="site-mark">MetabolismX</p>
@@ -171,39 +220,49 @@ body::before {
       <div class="hero-grid">
         <div class="hero-copy">
           <h1>MetabolismX</h1>
+
           <p class="hero-lead">MetabolismX är ett initiativ inom förebyggande medicin med fokus på att förstå och identifiera risk i tid.</p>
+
           <p>I klinisk vardag upptäcks många av de vanligaste riskfaktorerna för sjukdom sent, trots att de ofta kan identifieras tidigare.</p>
+
           <div class="copy-break"></div>
+
           <p>Detta gäller särskilt metabola förändringar som över tid påverkar kroppens utveckling.</p>
+
           <ul>
             <li>Förändringar i kroppen sker ofta långt innan symtom uppstår</li>
             <li>Sjukdomar som drabbar hjärtat utvecklas successivt med en gradvis försämring av hjärtats förmåga</li>
             <li>Även hjärnan förändras över tid med en långsam förlust av kognitiv kapacitet</li>
           </ul>
+
           <div class="copy-break"></div>
+
           <p>Syftet med MetabolismX är att göra denna typ av kunskap mer tillgänglig i praktiken.</p>
+
           <ul>
             <li>Tidiga signaler kan identifieras genom ett begränsat antal analyser</li>
             <li>Det skapar möjlighet att förstå och påverka utvecklingen i din kropp innan sjukdom uppstår</li>
           </ul>
+
           <div class="copy-break"></div>
+
           <p class="hero-note">Detta arbete utgår från ett bredare perspektiv på hälsa, där vitalitet är beroende av metabolism – och därför kan moduleras.</p>
         </div>
 
         <aside class="hero-actions" aria-label="Vägar vidare">
-          <div>
-            <p class="hero-actions-label">Vägar vidare</p>
-          </div>
-          <article class="path-card is-primary">
+          <p class="hero-actions-label">Vägar vidare</p>
+
+          <article class="path-card">
             <h2>Förstå bakgrunden</h2>
             <p>Texter om bakgrund, perspektiv och resonemang kring hur risk, hälsa och åldrande kan förstås tidigare och i ett större sammanhang.</p>
-            <a href="/risk/">Gå till biblioteket</a>
+            <a href="https://metabolismx.org/risk/">Gå till biblioteket</a>
           </article>
-            <h2>Pilot</h2>
-            <p>En begränsad gratispilot för ett fåtal deltagare, med riktad provtagning och analys i ett forskningsnära format.</p>
+
+          <article class="path-card is-primary">
             <h2>Tidig lansering</h2>
             <p>Ett separat spår för tidig användning till reducerat pris, för dig som vill börja använda MetabolismX innan full lansering.</p>
-        <article class="path-card">
+            <a href="https://metabolismx.org/t/">Öppna tidig lansering</a>
+          </article>
         </aside>
       </div>
     </section>
